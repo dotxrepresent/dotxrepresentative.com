@@ -278,6 +278,38 @@ section{padding:4rem 2rem}
 .f-success p{font-size:.74rem;line-height:1.9;color:var(--muted)}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:2.5rem}.f-row{grid-template-columns:1fr}}
 
+/* MOBILE */
+@media(max-width:768px){
+  nav{padding:.75rem 1.25rem}
+  .nav-links{display:none}
+  .hero-content{padding:5rem 1.25rem 3rem}
+  h1{font-size:clamp(2.8rem,12vw,5rem)}
+  .hero-ctas{flex-direction:column;align-items:flex-start;gap:.75rem}
+  section{padding:3rem 1.25rem}
+  .about-grid{grid-template-columns:1fr;gap:2rem}
+  .about-right{padding-left:0;border-left:none;border-top:1px solid var(--border);padding-top:2rem}
+  .services-grid{grid-template-columns:1fr}
+  .svc{padding:1.5rem}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr;gap:2rem}
+  .f-row{grid-template-columns:1fr}
+  .cs-inner{grid-template-columns:1fr}
+  .cs-copy{border-right:none;border-bottom:1px solid var(--border)}
+  .cs-stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:none}
+  .stat:nth-child(3){border-top:1px solid var(--border)}
+  .stat:nth-child(4){border-top:1px solid var(--border);border-right:none}
+  .work-next{flex-direction:column;align-items:flex-start;gap:1.25rem}
+  footer{flex-direction:column;align-items:flex-start;gap:1rem}
+  .f-links{flex-wrap:wrap;gap:1rem}
+  .about-proof{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .process-grid{grid-template-columns:1fr}
+  .about-proof{grid-template-columns:1fr 1fr}
+  .cs-stats{grid-template-columns:1fr 1fr}
+}
+
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.25rem}
 .f-logo img{height:24px;width:auto;display:block;opacity:.4}
@@ -503,47 +535,44 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
 
 <!-- WORK -->
 <section id="work">
-  <div class="s-label fi">Proof of Work</div>
-  <h2 class="s-h2 fi">Built from <em>scratch.</em></h2>
-<!-- WORK -->
-<section id="work">
   <div class="s-label fi">Work</div>
   <h2 class="s-h2 fi">Proof of <em>work.</em></h2>
 
   <!-- VX -->
   <div class="cs fi" style="border:1px solid var(--border);margin-bottom:2px">
-    <div class="cs-inner" style="padding:2.5rem">
-      <div class="cs-copy">
-        <div class="cs-num" style="margin-bottom:.75rem">01</div>
-        <div class="cs-title" style="margin-bottom:1rem">Vintxge Golf</div>
-        <div class="cs-tags" style="margin-bottom:1.5rem">
-          <span class="cs-tag">Brand Identity</span>
-          <span class="cs-tag">E-Commerce</span>
-          <span class="cs-tag">Members Club</span>
-          <span class="cs-tag">Brand Events</span>
-          <span class="cs-tag">Pro Shop Placement</span>
-          <span class="cs-tag">International Distribution</span>
-        </div>
-        <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1rem">Vintxge Golf was co-founded in 2022 as a self-funded golf apparel brand. Brand identity, Shopify e-commerce, product development, photography, supplier partnerships and a content strategy that grew an international community were all built in-house without external funding or agency support.</p>
-        <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1rem">The brand expanded into physical retail with pro shop placement at Deeside Golf Club, professional golfer sponsorship on the Farmfoods Tartan Pro Tour circuit, pop-up market activations across the UK, and live brand events including a Vanity Friday pub golf night at the Babylon Club. The brand has shipped to over 10 countries with creator partnerships in the USA, New Zealand and beyond.</p>
-        <a href="https://vintxgegolf.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit vintxgegolf.com ↗</a>
+    <div style="padding:2rem 2.5rem;border-bottom:1px solid var(--border)">
+      <div class="cs-num" style="margin-bottom:.75rem">01</div>
+      <div class="cs-title" style="margin-bottom:1rem">Vintxge Golf</div>
+      <div class="cs-tags" style="margin-bottom:1.5rem">
+        <span class="cs-tag">Brand Identity</span>
+        <span class="cs-tag">E-Commerce</span>
+        <span class="cs-tag">Members Club</span>
+        <span class="cs-tag">Brand Events</span>
+        <span class="cs-tag">Pro Shop Placement</span>
+        <span class="cs-tag">International Distribution</span>
       </div>
+      <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1rem;max-width:640px">Vintxge Golf was co-founded in 2022 as a self-funded golf apparel brand. Brand identity, Shopify e-commerce, product development, photography, supplier partnerships and a content strategy that grew an international community were all built in-house without external funding or agency support.</p>
+      <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1.5rem;max-width:640px">The brand expanded into physical retail with pro shop placement at Deeside Golf Club, professional golfer sponsorship on the Farmfoods Tartan Pro Tour circuit, pop-up market activations and live brand events. The brand has shipped to over 10 countries with creator partnerships in the USA, New Zealand and beyond.</p>
+      <a href="https://vintxgegolf.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit vintxgegolf.com ↗</a>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)">
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border)">
       <div style="border-right:1px solid var(--border);overflow:hidden;aspect-ratio:4/3">
         <img src="IMG_3076_2.jpg" alt="VX Performance Hoodie" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top">
       </div>
       <div style="overflow:hidden;aspect-ratio:4/3">
-        <img src="IMG_3086_2.jpg" alt="VX Edinburgh" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top">
+        <img src="IMG_3086_2.jpg" alt="VX Edinburgh" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 20%">
       </div>
       <div style="border-right:1px solid var(--border);border-top:1px solid var(--border);overflow:hidden;aspect-ratio:4/3">
         <img src="IMG_3089_2.jpg" alt="VX Members Club" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top">
       </div>
       <div style="border-top:1px solid var(--border);overflow:hidden;aspect-ratio:4/3">
-        <video src="733930c3e2f247a1b858cccd4b48565b.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover"></video>
+        <video src="733930c3e2f247a1b858cccd4b48565b.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:center 30%"></video>
       </div>
     </div>
-    <div class="cs-stats" style="border-top:1px solid var(--border)">
+    <div style="overflow:hidden;border-bottom:1px solid var(--border);aspect-ratio:16/7">
+      <video src="vx-preview.mov" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:center top"></video>
+    </div>
+    <div class="cs-stats">
       <div class="stat"><div class="stat-n">2022</div><div class="stat-l">Founded</div></div>
       <div class="stat"><div class="stat-n">£0</div><div class="stat-l">External funding</div></div>
       <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Countries shipped</div></div>
@@ -552,23 +581,24 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
   </div>
 
   <!-- SKILOH -->
-  <div class="cs fi" style="border:1px solid var(--border);margin-top:2px">
-    <div class="cs-inner" style="padding:2.5rem">
-      <div class="cs-copy">
-        <div class="cs-num" style="margin-bottom:.75rem">02</div>
-        <div class="cs-title" style="margin-bottom:.5rem">Skiloh Golf Coaching</div>
-        <p style="font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,242,.3);margin-bottom:1rem">Client Work</p>
-        <div class="cs-tags" style="margin-bottom:1.5rem">
-          <span class="cs-tag">Web Design and Build</span>
-          <span class="cs-tag">Brand Identity</span>
-          <span class="cs-tag">Copywriting</span>
-          <span class="cs-tag">Sponsor Integration</span>
-        </div>
-        <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1rem">PGA professional Sam Kiloh required a premium, conversion focused website reflecting his coaching credentials. The brief covered brand positioning, visual identity, copywriting, responsive design, sponsor integration and GDPR compliance. Sponsors include Arccos Golf, Deeside Golf Club, GymCaddie and TRS. Built, tested and live within weeks of brief.</p>
-        <a href="https://samkiloh.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit samkiloh.com ↗</a>
+  <div class="cs fi" style="border:1px solid var(--border);border-top:none">
+    <div style="padding:2rem 2.5rem;border-bottom:1px solid var(--border)">
+      <div class="cs-num" style="margin-bottom:.75rem">02</div>
+      <div class="cs-title" style="margin-bottom:.4rem">Skiloh Golf Coaching</div>
+      <p style="font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,242,.3);margin-bottom:1rem">Client Work</p>
+      <div class="cs-tags" style="margin-bottom:1.5rem">
+        <span class="cs-tag">Web Design and Build</span>
+        <span class="cs-tag">Brand Identity</span>
+        <span class="cs-tag">Copywriting</span>
+        <span class="cs-tag">Sponsor Integration</span>
       </div>
+      <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1.5rem;max-width:640px">PGA professional Sam Kiloh required a premium, conversion focused website reflecting his coaching credentials. The brief covered brand positioning, visual identity, copywriting, responsive design, sponsor integration and GDPR compliance. Sponsors include Arccos Golf, Deeside Golf Club, GymCaddie and TRS. Built, tested and live within weeks of brief.</p>
+      <a href="https://samkiloh.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit samkiloh.com ↗</a>
     </div>
-    <div class="cs-stats" style="border-top:1px solid var(--border)">
+    <div style="overflow:hidden;border-bottom:1px solid var(--border);aspect-ratio:16/7">
+      <video src="sam-preview.mov" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:center top"></video>
+    </div>
+    <div class="cs-stats">
       <div class="stat"><div class="stat-n">1 Page</div><div class="stat-l">Full single-page build</div></div>
       <div class="stat"><div class="stat-n">6+</div><div class="stat-l">Sponsor logos</div></div>
       <div class="stat"><div class="stat-n">PGA Pro</div><div class="stat-l">Client profile</div></div>
