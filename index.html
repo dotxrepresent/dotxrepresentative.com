@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-dotx.png">
 <link rel="manifest" href="dotx-site.webmanifest">
-<meta name="theme-color" content="#080808">
+<meta name="theme-color" content="#ffffff">
 
 <!-- SEO -->
 <meta name="description" content="dot.x Representative is a brand and startup consultancy based in the UK. Brand identity, web design and build, photography, brand events and go to market advisory. Primary focus on the sports and golf sector. Operating under Acqua Utilities Media Limited.">
@@ -71,7 +71,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --black:#080808;--white:#f5f5f2;--dim:rgba(245,245,242,0.06);
-  --border:rgba(245,245,242,0.1);--muted:rgba(245,245,242,0.4);
+  --border:rgba(245,245,242,0.12);--muted:rgba(245,245,242,0.65);
   --display:'Bebas Neue',sans-serif;
   --serif:'Fraunces',Georgia,serif;
   --mono:'DM Mono',monospace;
@@ -85,12 +85,12 @@ body{font-family:var(--mono);background:var(--black);color:var(--white);overflow
 @media(max-width:900px){.cur,.cur-r{display:none}body{cursor:auto}}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 2rem;background:rgba(8,8,8,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 2rem;background:rgba(8,8,8,0.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-logo img{height:32px;width:auto;display:block}
 .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;transition:color .2s}
+.nav-links a{color:rgba(245,245,242,.55);text-decoration:none;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;transition:color .2s}
 .nav-links a:hover{color:var(--white)}
-.nav-cta{border:1px solid var(--border)!important;padding:.4rem 1rem!important;color:var(--white)!important}
+.nav-cta{border:1px solid rgba(245,245,242,.3)!important;padding:.4rem 1rem!important;color:var(--white)!important}
 .nav-cta:hover{background:var(--white)!important;color:var(--black)!important}
 .hamburger{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:none;padding:4px}
 .hamburger span{display:block;width:20px;height:1px;background:var(--white)}
@@ -104,49 +104,49 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 
 /* HERO */
 .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 2rem 3.5rem;overflow:hidden;background:var(--black)}
-.hero-bg{position:absolute;top:50%;left:50%;transform:translate(-20%,-52%);width:70vw;max-width:780px;opacity:0.04;pointer-events:none;animation:drift 16s ease-in-out infinite alternate}
-@keyframes drift{from{transform:translate(-20%,-52%) scale(1)}to{transform:translate(-20%,-54%) scale(1.025)}}
+.hero-bg{position:absolute;top:50%;right:-5%;transform:translateY(-50%);width:42vw;max-width:560px;opacity:0.055;pointer-events:none;animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateY(-50%) scale(1)}to{transform:translateY(-52%) scale(1.02)}}
 .hero-content{position:relative;z-index:2;max-width:820px}
-.hero-eyebrow{font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;display:flex;align-items:center;gap:.75rem}
-.hero-eyebrow::before{content:'';width:1.5rem;height:1px;background:var(--border)}
+.hero-eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,245,242,.5);margin-bottom:1.5rem;display:flex;align-items:center;gap:.75rem}
+.hero-eyebrow::before{content:'';width:1.5rem;height:1px;background:rgba(245,245,242,.3)}
 .hero h1{font-family:var(--display);font-size:clamp(3.5rem,9vw,8rem);letter-spacing:.02em;line-height:.9;color:var(--white);margin-bottom:2rem;text-transform:uppercase}
-.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:200;text-transform:none;font-size:.88em;color:rgba(245,245,242,.65);letter-spacing:0}
-.hero-sub{font-size:0.78rem;line-height:1.9;color:var(--muted);max-width:420px;margin-bottom:2rem}
+.hero h1 em{font-family:var(--serif);font-style:italic;font-weight:200;text-transform:none;font-size:.88em;color:rgba(245,245,242,.7);letter-spacing:0}
+.hero-sub{font-size:0.84rem;line-height:1.85;color:rgba(245,245,242,.7);max-width:480px;margin-bottom:2rem}
 .hero-ctas{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
 .btn-p{display:inline-flex;align-items:center;gap:.6rem;background:var(--white);color:var(--black);padding:.75rem 1.75rem;font-family:var(--mono);font-size:0.68rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:background .2s,gap .2s}
 .btn-p:hover{background:#e8e0d0;gap:1rem}
-.btn-g{font-family:var(--mono);font-size:0.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:.1rem;transition:color .2s,border-color .2s}
-.btn-g:hover{color:var(--white);border-color:rgba(245,245,242,.4)}
-.hero-scroll{position:absolute;bottom:2rem;right:2rem;display:flex;align-items:center;gap:.6rem;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,245,242,.2)}
-.scroll-line{width:1px;height:35px;background:rgba(245,245,242,.12);animation:pulse 2s ease-in-out infinite}
+.btn-g{font-family:var(--mono);font-size:0.68rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,245,242,.6);text-decoration:none;border-bottom:1px solid rgba(245,245,242,.25);padding-bottom:.1rem;transition:color .2s,border-color .2s}
+.btn-g:hover{color:var(--white);border-color:rgba(245,245,242,.6)}
+.hero-scroll{position:absolute;bottom:2rem;right:2rem;display:flex;align-items:center;gap:.6rem;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,245,242,.3)}
+.scroll-line{width:1px;height:35px;background:rgba(245,245,242,.18);animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:.2}50%{opacity:.7}}
 
 /* MARQUEE */
-.marquee{overflow:hidden;white-space:nowrap;padding:.6rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.marquee-inner{display:inline-block;animation:mq 30s linear infinite;font-size:0.6rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,245,242,.2)}
+.marquee{overflow:hidden;white-space:nowrap;padding:.65rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.marquee-inner{display:inline-block;animation:mq 30s linear infinite;font-size:0.62rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,245,242,.35)}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* SECTIONS */
 section{padding:4rem 2rem}
-.s-label{font-size:0.6rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,245,242,.3);margin-bottom:2.5rem;display:flex;align-items:center;gap:.75rem}
-.s-label::before{content:'';width:1.2rem;height:1px;background:var(--border)}
+.s-label{font-size:0.62rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(245,245,242,.45);margin-bottom:2.5rem;display:flex;align-items:center;gap:.75rem}
+.s-label::before{content:'';width:1.2rem;height:1px;background:rgba(245,245,242,.3)}
 .s-h2{font-family:var(--display);font-size:clamp(2rem,4.5vw,3.8rem);letter-spacing:.02em;text-transform:uppercase;line-height:1;color:var(--white);margin-bottom:1.25rem}
 .s-h2 em{font-family:var(--serif);font-style:italic;font-weight:200;text-transform:none;letter-spacing:0;font-size:.9em}
 .divider{height:1px;background:var(--border)}
 
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.about-body{font-size:0.78rem;line-height:1.95;color:var(--muted);margin-bottom:1rem}
+.about-body{font-size:0.82rem;line-height:1.9;color:rgba(245,245,242,.7);margin-bottom:1rem}
 .about-body strong{color:var(--white);font-weight:400}
 .about-proof{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin-top:2rem}
 .proof-item{padding:1.25rem;background:var(--black)}
 .proof-num{font-family:var(--display);font-size:2.2rem;color:var(--white);line-height:1;margin-bottom:.3rem}
-.proof-lbl{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,245,242,.25)}
+.proof-lbl{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,242,.4)}
 .about-right{border-left:1px solid var(--border);padding-left:3rem}
 .about-quote{font-family:var(--serif);font-style:italic;font-weight:200;font-size:clamp(1.2rem,2.2vw,1.7rem);color:var(--white);line-height:1.55;margin-bottom:1.5rem}
-.about-attr{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,245,242,.25)}
-.vx-link{display:inline-flex;align-items:center;gap:.6rem;margin-top:2rem;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:.15rem;transition:color .2s,border-color .2s}
-.vx-link:hover{color:var(--white);border-color:rgba(245,245,242,.4)}
+.about-attr{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,245,242,.4)}
+.vx-link{display:inline-flex;align-items:center;gap:.6rem;margin-top:2rem;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,242,.6);text-decoration:none;border-bottom:1px solid rgba(245,245,242,.2);padding-bottom:.15rem;transition:color .2s,border-color .2s}
+.vx-link:hover{color:var(--white);border-color:rgba(245,245,242,.5)}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:2.5rem}.about-right{border-left:none;border-top:1px solid var(--border);padding-left:0;padding-top:2.5rem}}
 
 /* SERVICES */
@@ -155,29 +155,86 @@ section{padding:4rem 2rem}
 .svc::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:var(--white);transform:scaleX(0);transform-origin:left;transition:transform .35s}
 .svc:hover::before{transform:scaleX(1)}
 .svc:hover{background:var(--dim)}
-.svc-num{font-size:.58rem;letter-spacing:.25em;color:rgba(245,245,242,.18);text-transform:uppercase}
-.svc-title{font-family:var(--display);font-size:1.4rem;letter-spacing:.04em;text-transform:uppercase;color:var(--white);line-height:1.1}
-.svc-desc{font-size:.72rem;line-height:1.85;color:var(--muted);flex-grow:1}
-.svc-list{list-style:none;display:flex;flex-direction:column;gap:.35rem}
-.svc-list li{font-size:.62rem;letter-spacing:.06em;color:rgba(245,245,242,.3);display:flex;align-items:flex-start;gap:.5rem}
-.svc-list li::before{content:'—';color:rgba(245,245,242,.15);flex-shrink:0}
-.svc-price{font-family:var(--display);font-size:1.2rem;letter-spacing:.04em;color:var(--white);border-top:1px solid var(--border);padding-top:1rem;margin-top:auto}
-.svc-price span{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;color:rgba(245,245,242,.25);display:block;margin-top:.15rem}
-.svc-note{font-size:.6rem;letter-spacing:.1em;color:rgba(245,245,242,.2);margin-top:1.5rem;text-align:right}
-@media(max-width:900px){.services-grid{grid-template-columns:1fr}}
+.svc-num{font-size:.6rem;letter-spacing:.22em;color:rgba(245,245,242,.3);text-transform:uppercase}
+.svc-title{font-family:var(--display);font-size:1.5rem;letter-spacing:.04em;text-transform:uppercase;color:var(--white);line-height:1.1}
+.svc-desc{font-size:.76rem;line-height:1.85;color:rgba(245,245,242,.65);flex-grow:1}
+.svc-list{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.svc-list li{font-size:.66rem;letter-spacing:.06em;color:rgba(245,245,242,.45);padding-left:.75rem}
+.svc-price{font-family:var(--display);font-size:1.3rem;letter-spacing:.04em;color:var(--white);border-top:1px solid var(--border);padding-top:1rem;margin-top:auto}
+.svc-price span{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;color:rgba(245,245,242,.4);display:block;margin-top:.15rem}
+.svc-note{font-size:.62rem;letter-spacing:.08em;color:rgba(245,245,242,.35);margin-top:1.5rem;text-align:right}
+@media(max-width:900px){.services-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.services-grid{grid-template-columns:1fr}}
 
 /* PROCESS */
 .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);margin-top:2.5rem}
 .proc{padding:2rem 1.75rem;border-right:1px solid var(--border)}
 .proc:last-child{border-right:none}
-.proc-num{font-family:var(--display);font-size:3rem;color:rgba(245,245,242,.05);line-height:1;margin-bottom:1rem}
-.proc-title{font-family:var(--display);font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);margin-bottom:.75rem}
-.proc-desc{font-size:.7rem;line-height:1.85;color:var(--muted)}
+.proc-num{font-family:var(--display);font-size:3rem;color:rgba(245,245,242,.07);line-height:1;margin-bottom:1rem}
+.proc-title{font-family:var(--display);font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);margin-bottom:.75rem}
+.proc-desc{font-size:.74rem;line-height:1.85;color:rgba(245,245,242,.6)}
 @media(max-width:900px){.process-grid{grid-template-columns:1fr 1fr}.proc{border-right:none;border-bottom:1px solid var(--border)}}
 @media(max-width:600px){.process-grid{grid-template-columns:1fr}}
 
-/* WORK — CASE STUDIES */
-#work .work-intro{font-size:.78rem;line-height:1.9;color:var(--muted);max-width:500px;margin-top:-.5rem;margin-bottom:2rem}
+/* WORK SECTION */
+.work-section{padding:0}
+.work-header{padding:4rem 2rem 2rem}
+
+/* Accordion case study */
+.cs2{border:1px solid var(--border);margin-top:-1px}
+.cs2-header{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 2rem;cursor:pointer;user-select:none;gap:2rem;transition:background .2s}
+.cs2-header:hover{background:rgba(245,245,242,.03)}
+.cs2-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.cs2-num{font-size:.56rem;letter-spacing:.25em;color:rgba(245,245,242,.3);text-transform:uppercase;white-space:nowrap}
+.cs2-name{font-family:var(--display);font-size:clamp(1.2rem,2.5vw,1.8rem);letter-spacing:.03em;text-transform:uppercase;color:var(--white);line-height:1}
+.cs2-tags{display:flex;flex-wrap:wrap;gap:.3rem}
+.cs2-tag{font-size:.54rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,245,242,.4);border:1px solid rgba(245,245,242,.1);padding:.18rem .5rem}
+.cs2-toggle{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,245,242,.35);white-space:nowrap;flex-shrink:0;transition:color .2s}
+.cs2-header:hover .cs2-toggle{color:var(--white)}
+
+/* Accordion body */
+.cs2-body{display:none;border-top:1px solid var(--border)}
+.cs2-body.open{display:grid;grid-template-columns:1fr 1fr}
+.cs2-copy{padding:3rem 2.5rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1.75rem;justify-content:center}
+.cs2-copy p{font-size:.9rem;line-height:1.9;color:rgba(245,245,242,.7)}
+.cs2-copy p:only-of-type{font-size:1rem;line-height:1.85}
+.cs2-copy a{align-self:flex-start;margin-top:.25rem}
+.cs2-media{display:flex;flex-direction:column;overflow:hidden;background:var(--black)}
+.cs2-media video{width:100%;height:auto;display:block}
+.cs2-media img{width:100%;height:auto;display:block}
+.cs2-caption{flex-shrink:0;padding:.5rem 1.25rem;font-family:var(--mono);font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,245,242,.38);border-top:1px solid var(--border)}
+
+/* Browser chrome — no letterbox, video natural width */
+.cs2-browser{display:flex;flex-direction:column;overflow:hidden;background:var(--black)}
+.cs2-bar{display:flex;align-items:center;gap:.6rem;padding:.5rem 1rem;border-bottom:1px solid rgba(255,255,255,.08);background:#181818;flex-shrink:0}
+.cs2-dots{display:flex;gap:.38rem}
+.cs2-dot{width:9px;height:9px;border-radius:50%}
+.cs2-dot:nth-child(1){background:#ff5f57}
+.cs2-dot:nth-child(2){background:#febc2e}
+.cs2-dot:nth-child(3){background:#28c840}
+.cs2-url{flex:1;background:rgba(255,255,255,.06);border-radius:3px;padding:.2rem .75rem;font-family:var(--mono);font-size:.56rem;letter-spacing:.06em;color:rgba(255,255,255,.35);text-align:center}
+.cs2-browser video{width:100%;height:auto;display:block}
+
+/* Section 03 — copy left, stacked media right */
+.cs2-stacked{display:none;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;grid-template-areas:"copy1 photo" "copy2 video";border-top:1px solid var(--border)}
+.cs2-copy1{grid-area:copy1;padding:2.5rem;border-right:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:.9rem;justify-content:center}
+.cs2-copy2{grid-area:copy2;padding:2.5rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:.9rem;justify-content:center}
+.cs2-copy1 p,.cs2-copy2 p{font-size:.9rem;line-height:1.9;color:rgba(245,245,242,.7)}
+.cs2-copy-label{font-family:var(--mono);font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,245,242,.3)}
+.cs2-photo{grid-area:photo;display:flex;flex-direction:column;overflow:hidden;border-bottom:1px solid var(--border)}
+.cs2-photo img{width:100%;height:auto;display:block}
+.cs2-video{grid-area:video;display:flex;flex-direction:column;overflow:hidden}
+.cs2-video video{width:100%;height:auto;display:block}
+
+@media(max-width:900px){
+  .cs2-body.open{grid-template-columns:1fr}
+  .cs2-copy{border-right:none;border-bottom:1px solid var(--border)}
+  .cs2-left{gap:1rem}
+  .cs2-tags{display:none}
+  .cs2-stacked{grid-template-columns:1fr;grid-template-rows:auto;grid-template-areas:"copy1" "photo" "copy2" "video"}
+  .cs2-copy1{border-right:none}
+  .cs2-copy2{border-right:none;border-top:1px solid var(--border)}
+}
 
 .cs{border:1px solid var(--border);margin-top:1px;overflow:hidden}
 .cs+.cs{border-top:none}
@@ -207,7 +264,7 @@ section{padding:4rem 2rem}
 .g3{grid-template-columns:2fr 1fr 1fr}
 .g4{grid-template-columns:repeat(4,1fr)}
 .g-img{overflow:hidden;background:#111;position:relative}
-.g-img img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .5s ease;filter:brightness(.88)}
+.g-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s,filter .6s;filter:brightness(.85)}
 .g-img:hover img{transform:scale(1.04);filter:brightness(1)}
 .g-img.r1{aspect-ratio:4/3}
 .g-img.r2{aspect-ratio:3/4}
@@ -217,7 +274,7 @@ section{padding:4rem 2rem}
 
 /* VIDEO */
 .cs-video{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
-.cs-video video{width:100%;height:100%;object-fit:cover;display:block}
+.cs-video video{width:100%;height:100%;display:block}
 .cs-video-ui{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:1.5rem 2rem;background:linear-gradient(transparent 55%,rgba(0,0,0,.6) 100%);pointer-events:none}
 .cs-video-lbl{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,245,242,.45);margin-bottom:.6rem}
 .snd-btn{pointer-events:all;background:rgba(245,245,242,.08);border:1px solid rgba(245,245,242,.18);color:var(--white);font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:.4rem .9rem;cursor:none;backdrop-filter:blur(4px);transition:background .2s}
@@ -228,7 +285,7 @@ section{padding:4rem 2rem}
 .stat{padding:1.25rem 1.5rem;border-right:1px solid var(--border)}
 .stat:last-child{border-right:none}
 .stat-n{font-family:var(--display);font-size:1.6rem;letter-spacing:.02em;color:var(--white);line-height:1;margin-bottom:.25rem}
-.stat-l{font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,245,242,.22)}
+.stat-l{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,242,.45)}
 
 @media(max-width:900px){
   .cs-inner{grid-template-columns:1fr}
@@ -250,56 +307,55 @@ section{padding:4rem 2rem}
 
 /* WORK NEXT */
 .work-next{border:1px solid var(--border);border-top:none;padding:2.5rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;background:var(--dim)}
-.work-next-txt{font-family:var(--display);font-size:clamp(1.4rem,2.8vw,2.2rem);letter-spacing:.04em;text-transform:uppercase;color:rgba(245,245,242,.25)}
+.work-next-txt{font-family:var(--display);font-size:clamp(1.4rem,2.8vw,2.2rem);letter-spacing:.04em;text-transform:uppercase;color:rgba(245,245,242,.4)}
 .work-next-txt em{font-family:var(--serif);font-style:italic;font-weight:200;text-transform:none;letter-spacing:0;color:var(--white)}
 
 /* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.contact-body{font-size:.76rem;line-height:1.95;color:var(--muted);margin-bottom:1.5rem}
-.contact-detail{display:flex;flex-direction:column;gap:.4rem;font-size:.65rem;letter-spacing:.12em;color:rgba(245,245,242,.28)}
-.contact-detail a{color:var(--muted);text-decoration:none;transition:color .2s}
+.contact-body{font-size:.82rem;line-height:1.9;color:rgba(245,245,242,.7);margin-bottom:1.5rem}
+.contact-detail{display:grid;grid-template-columns:auto 1fr;gap:.5rem 2rem;align-items:baseline;font-size:.72rem;letter-spacing:.08em;color:rgba(245,245,242,.55);margin-top:.5rem}
+.contact-detail a{color:rgba(245,245,242,.75);text-decoration:none;transition:color .2s}
 .contact-detail a:hover{color:var(--white)}
-.contact-detail .lbl{margin-top:.9rem;color:rgba(245,245,242,.18);letter-spacing:.2em;text-transform:uppercase;font-size:.58rem}
-.c-form{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border)}
-.f-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.contact-detail .lbl{color:rgba(245,245,242,.3);letter-spacing:.2em;text-transform:uppercase;font-size:.58rem;white-space:nowrap}
+.c-form{display:flex;flex-direction:column;gap:0;background:var(--border);border:1px solid var(--border);overflow:hidden}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border-bottom:1px solid var(--border)}
 .f-field{background:var(--black);padding:1rem 1.25rem;display:flex;flex-direction:column;gap:.35rem}
 .f-field:focus-within{background:var(--dim)}
-.f-label{font-size:.56rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,245,242,.22)}
-.f-field input,.f-field select,.f-field textarea{background:none;border:none;outline:none;color:var(--white);font-family:var(--mono);font-size:.76rem;padding:0;resize:none;-webkit-appearance:none}
-.f-field input::placeholder,.f-field textarea::placeholder{color:rgba(245,245,242,.15)}
+.f-label{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,245,242,.35)}
+.f-field input,.f-field select,.f-field textarea{background:none;border:none;outline:none;color:var(--white);font-family:var(--mono);font-size:.78rem;padding:0;resize:none;-webkit-appearance:none}
+.f-field input::placeholder,.f-field textarea::placeholder{color:rgba(245,245,242,.25)}
 .f-field select option{background:var(--black)}
 .f-field textarea{min-height:90px}
 .f-submit{background:var(--black);padding:1.25rem;display:flex;align-items:center;justify-content:space-between}
 .f-submit button{display:inline-flex;align-items:center;gap:.6rem;background:var(--white);color:var(--black);border:none;padding:.75rem 1.75rem;font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;cursor:none;transition:background .2s}
 .f-submit button:hover{background:#e8e0d0}
-.f-note{font-size:.58rem;letter-spacing:.1em;color:rgba(245,245,242,.18);text-transform:uppercase}
+.f-note{font-size:.6rem;letter-spacing:.1em;color:rgba(245,245,242,.3);text-transform:uppercase}
 .f-success{display:none;padding:2.5rem;text-align:center}
 .f-success-mark{font-family:var(--display);font-size:2.5rem;letter-spacing:.1em;margin-bottom:.75rem}
-.f-success p{font-size:.74rem;line-height:1.9;color:var(--muted)}
+.f-success p{font-size:.78rem;line-height:1.9;color:rgba(245,245,242,.65)}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:2.5rem}.f-row{grid-template-columns:1fr}}
 
 /* MOBILE */
 @media(max-width:768px){
   nav{padding:.75rem 1.25rem}
-  .nav-links{display:none}
+  .hero-bg{width:80vw;right:-15%}
   .hero-content{padding:5rem 1.25rem 3rem}
   h1{font-size:clamp(2.8rem,12vw,5rem)}
   .hero-ctas{flex-direction:column;align-items:flex-start;gap:.75rem}
   section{padding:3rem 1.25rem}
+  .work-section{padding:0}
+  .work-header{padding:3rem 1.25rem 1.5rem}
   .about-grid{grid-template-columns:1fr;gap:2rem}
   .about-right{padding-left:0;border-left:none;border-top:1px solid var(--border);padding-top:2rem}
   .services-grid{grid-template-columns:1fr}
   .svc{padding:1.5rem}
-  .process-grid{grid-template-columns:1fr 1fr}
   .contact-grid{grid-template-columns:1fr;gap:2rem}
   .f-row{grid-template-columns:1fr}
-  .cs-inner{grid-template-columns:1fr}
-  .cs-copy{border-right:none;border-bottom:1px solid var(--border)}
   .cs-stats{grid-template-columns:1fr 1fr}
   .stat:nth-child(2){border-right:none}
   .stat:nth-child(3){border-top:1px solid var(--border)}
   .stat:nth-child(4){border-top:1px solid var(--border);border-right:none}
-  .work-next{flex-direction:column;align-items:flex-start;gap:1.25rem}
+  .work-next{flex-direction:column;align-items:flex-start;gap:1.25rem;padding:1.5rem}
   footer{flex-direction:column;align-items:flex-start;gap:1rem}
   .f-links{flex-wrap:wrap;gap:1rem}
   .about-proof{grid-template-columns:1fr 1fr}
@@ -308,18 +364,19 @@ section{padding:4rem 2rem}
   .process-grid{grid-template-columns:1fr}
   .about-proof{grid-template-columns:1fr 1fr}
   .cs-stats{grid-template-columns:1fr 1fr}
+  .services-grid{grid-template-columns:1fr}
 }
 
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.25rem}
-.f-logo img{height:24px;width:auto;display:block;opacity:.4}
-.f-copy{font-size:.58rem;letter-spacing:.14em;color:rgba(245,245,242,.18);text-transform:uppercase}
+.f-logo img{height:24px;width:auto;display:block;opacity:.7}
+.f-copy{font-size:.6rem;letter-spacing:.12em;color:rgba(245,245,242,.3);text-transform:uppercase}
 .f-links{display:flex;gap:1.75rem;list-style:none}
-.f-links a{font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,242,.22);text-decoration:none;transition:color .2s}
+.f-links a{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,245,242,.4);text-decoration:none;transition:color .2s}
 .f-links a:hover{color:var(--white)}
-.f-acqua{font-size:.58rem;letter-spacing:.13em;color:rgba(245,245,242,.14);text-transform:uppercase}
-.f-acqua a{color:rgba(245,245,242,.22);text-decoration:none;transition:color .2s}
-.f-acqua a:hover{color:rgba(245,245,242,.5)}
+.f-acqua{font-size:.6rem;letter-spacing:.1em;color:rgba(245,245,242,.28);text-transform:uppercase}
+.f-acqua a{color:rgba(245,245,242,.38);text-decoration:none;transition:color .2s}
+.f-acqua a:hover{color:rgba(245,245,242,.65)}
 
 /* LIGHTBOX */
 .lb{display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.93);align-items:center;justify-content:center;padding:2rem}
@@ -350,7 +407,7 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo"><img src="dotx_V1_black__1_.PNG" alt="dot.x"></a>
+  <a href="#" class="nav-logo"><img src="dotx-logo-circle.png" alt="dot.x"></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -374,7 +431,7 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
   <div class="hero-content">
     <div class="hero-eyebrow">Startup Advisory and Brand Consultancy</div>
     <h1>Build <em>something</em><br>worth<br>talking about.</h1>
-    <p class="hero-sub">dot.x Representative is a brand and startup consultancy specialising in the sports sector. We work with early stage founders on brand identity, web design and build, photography, events and go to market strategy, bringing direct commercial experience to every engagement.</p>
+    <p class="hero-sub">dot.x Representative is a brand and startup consultancy specialising in the sports sector. Working with early stage founders on brand identity, web design and build, photography, events and go to market strategy. Direct commercial experience at every stage.</p>
     <div class="hero-ctas">
       <a href="#contact" class="btn-p">Start a Project →</a>
       <a href="#services" class="btn-g">See Services</a>
@@ -395,8 +452,8 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
   <div class="about-grid">
     <div class="fi">
       <h2 class="s-h2">Founders<br><em>advising</em><br>Founders.</h2>
-      <p class="about-body">dot.x Representative is a brand and startup consultancy grounded in direct commercial experience across the sports sector. The practice offers advisory, brand identity, web design and build, photography and brand events to early stage founders, with a particular focus on golf and sports businesses.</p>
-      <p class="about-body">The team behind dot.x has first-hand experience of taking a sports brand from concept to a commercially trading business. That experience informs every engagement and is evidenced in the work section below.</p>
+      <p class="about-body">dot.x Representative is a brand and startup consultancy grounded in direct commercial experience across the sports sector. The practice works with early stage founders on advisory, brand identity, web design and build, photography and brand events, with a particular focus on golf and sports businesses.</p>
+      <p class="about-body">The team behind dot.x has first-hand experience of taking a sports brand from concept to a commercially trading business. That experience informs every engagement.</p>
       <p class="about-body"><strong>Matthew Lynas</strong> (Founder and Director) leads strategy, commercial operations and client development. <strong>Craig Leith</strong> (Co-Founder and Lead Consultant) leads creative, design and digital delivery. dot.x operates under <strong>Acqua Utilities Media Limited</strong>.</p>
       <a href="https://vintxgegolf.com" target="_blank" rel="noopener noreferrer" class="vx-link">Our proof of work — Vintxge Golf ↗</a>
       <div class="about-proof">
@@ -409,8 +466,8 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
     <div class="about-right fi">
       <p class="about-quote">"The x is algebraic. It can be anything. That is how we think about what a startup can become."</p>
       <p class="about-attr">dot.x</p>
-      <p class="about-body" style="margin-top:2rem">Vintxge Golf was co-founded in 2022 and built entirely in-house. Brand identity, e-commerce, product development, photography, supplier relationships, brand events and international distribution, all developed without external funding or agency support.</p>
-      <p class="about-body">dot.x was founded to make that experience available to other early stage businesses. The advice is grounded in decisions that have actually been made, not theory.</p>
+      <p class="about-body" style="margin-top:2rem">Vintxge Golf was co-founded in 2022 and built entirely in-house. Brand identity, e-commerce, product development, photography, supplier relationships, brand events and international distribution, all without external funding or agency support.</p>
+      <p class="about-body">dot.x was founded to make that experience available to other early stage businesses. The advice is grounded in decisions that have actually been made.</p>
     </div>
   </div>
 </section>
@@ -465,31 +522,18 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
     <div class="svc fi">
       <div class="svc-num">04</div>
       <div class="svc-title">Startup Advisory</div>
-      <p class="svc-desc">Direct advisory for founders at any stage. Ideas reviewed, positioning sharpened and a clear path forward identified. Particularly relevant for businesses in the sports and golf sector.</p>
+      <p class="svc-desc">Direct advisory for founders at any stage. A focused initial session maps out the right approach, with follow-on support available as the business develops. Particularly relevant for sports and golf sector businesses.</p>
       <ul class="svc-list">
-        <li>One-to-one sessions, 60 or 90 minutes</li>
-        <li>Business model and go-to-market review</li>
-        <li>Brand, product, digital feedback</li>
-        <li>Monthly retainer available</li>
+        <li>Initial session £75, credited on any project</li>
+        <li>Follow-on sessions from £120</li>
+        <li>Business model, brand, digital feedback</li>
+        <li>Monthly retainer from £350</li>
       </ul>
-      <div class="svc-price">£120 per session<span>Retainer from £350 per month</span></div>
+      <div class="svc-price">From £75<span>Credited on any subsequent project</span></div>
     </div>
 
     <div class="svc fi">
       <div class="svc-num">05</div>
-      <div class="svc-title">Discovery Session</div>
-      <p class="svc-desc">A focused 60 minute session for those at an early stage or uncertain where to begin. The engagement, brief and right approach are identified and set out clearly. Credited in full against any subsequent project.</p>
-      <ul class="svc-list">
-        <li>60 minute strategy call</li>
-        <li>Written summary with recommendations</li>
-        <li>Clear next steps</li>
-        <li>Credited on any project</li>
-      </ul>
-      <div class="svc-price">£75<span>Credited on any project</span></div>
-    </div>
-
-    <div class="svc fi">
-      <div class="svc-num">06</div>
       <div class="svc-title">Digital Advertising</div>
       <p class="svc-desc">Online advertising campaigns planned, set up and managed across relevant platforms. Particularly effective when launched alongside a new brand or website to drive early traffic and awareness.</p>
       <ul class="svc-list">
@@ -502,7 +546,7 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
     </div>
 
     <div class="svc fi">
-      <div class="svc-num">07</div>
+      <div class="svc-num">06</div>
       <div class="svc-title">Content and Photography</div>
       <p class="svc-desc">Supporting content production for brands requiring photography alongside other deliverables. Shot in-house to a good commercial standard, or facilitated through an established network of professional photographers where the brief requires a higher level of resource.</p>
       <ul class="svc-list">
@@ -534,75 +578,155 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
 <div class="divider"></div>
 
 <!-- WORK -->
-<section id="work">
-  <div class="s-label fi">Work</div>
-  <h2 class="s-h2 fi">Proof of <em>work.</em></h2>
+<section id="work" class="work-section">
+  <div class="work-header">
+    <div class="s-label fi">Work</div>
+    <h2 class="s-h2 fi">Proof of <em>work.</em></h2>
+  </div>
 
-  <!-- VX -->
-  <div class="cs fi" style="border:1px solid var(--border);margin-bottom:2px">
-    <div style="padding:2rem 2.5rem;border-bottom:1px solid var(--border)">
-      <div class="cs-num" style="margin-bottom:.75rem">01</div>
-      <div class="cs-title" style="margin-bottom:1rem">Vintxge Golf</div>
-      <div class="cs-tags" style="margin-bottom:1.5rem">
-        <span class="cs-tag">Brand Identity</span>
-        <span class="cs-tag">E-Commerce</span>
-        <span class="cs-tag">Members Club</span>
-        <span class="cs-tag">Brand Events</span>
-        <span class="cs-tag">Pro Shop Placement</span>
-        <span class="cs-tag">International Distribution</span>
+  <!-- 01 — VX ECOMMERCE -->
+  <div class="cs2 fi">
+    <div class="cs2-header" data-cs="cs2-01">
+      <div class="cs2-left">
+        <span class="cs2-num">01</span>
+        <span class="cs2-name">Vintxge Golf</span>
+        <div class="cs2-tags">
+          <span class="cs2-tag">Shopify E-Commerce</span>
+          <span class="cs2-tag">Brand Identity</span>
+          <span class="cs2-tag">VX Members Club</span>
+          <span class="cs2-tag">10+ Countries</span>
+        </div>
       </div>
-      <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1rem;max-width:640px">Vintxge Golf was co-founded in 2022 as a self-funded golf apparel brand. Brand identity, Shopify e-commerce, product development, photography, supplier partnerships and a content strategy that grew an international community were all built in-house without external funding or agency support.</p>
-      <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1.5rem;max-width:640px">The brand expanded into physical retail with pro shop placement at Deeside Golf Club, professional golfer sponsorship on the Farmfoods Tartan Pro Tour circuit, pop-up market activations and live brand events. The brand has shipped to over 10 countries with creator partnerships in the USA, New Zealand and beyond.</p>
-      <a href="https://vintxgegolf.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit vintxgegolf.com ↗</a>
+      <span class="cs2-toggle">Open ↓</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border)">
-      <div style="border-right:1px solid var(--border);overflow:hidden;aspect-ratio:4/3">
-        <img src="IMG_3076_2.jpg" alt="VX Performance Hoodie" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top">
+    <div class="cs2-body" id="cs2-01">
+      <div class="cs2-copy">
+        <p>Vintxge Golf is a self-funded golf apparel brand built from scratch on Shopify. The full build covered brand identity, product pages, multi-currency checkout and supplier integrations. A private VX Members Club was developed as a gated tier for ambassadors and golf club representatives, with exclusive pricing and content.</p>
+        <p>Built entirely in-house, without agency support or external funding. Live and trading internationally from launch.</p>
+        <a href="https://vintxgegolf.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit vintxgegolf.com ↗</a>
       </div>
-      <div style="overflow:hidden;aspect-ratio:4/3">
-        <img src="IMG_3086_2.jpg" alt="VX Edinburgh" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 20%">
+      <div class="cs2-browser">
+        <div class="cs2-bar">
+          <div class="cs2-dots"><span class="cs2-dot"></span><span class="cs2-dot"></span><span class="cs2-dot"></span></div>
+          <span class="cs2-url">vintxgegolf.com</span>
+        </div>
+        <video src="sam-preview.mp4" autoplay muted loop playsinline></video>
       </div>
-      <div style="border-right:1px solid var(--border);border-top:1px solid var(--border);overflow:hidden;aspect-ratio:4/3">
-        <img src="IMG_3089_2.jpg" alt="VX Members Club" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top">
-      </div>
-      <div style="border-top:1px solid var(--border);overflow:hidden;aspect-ratio:4/3">
-        <video src="733930c3e2f247a1b858cccd4b48565b.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:center 30%"></video>
-      </div>
-    </div>
-    <div style="overflow:hidden;border-bottom:1px solid var(--border);aspect-ratio:16/7">
-      <video src="vx-preview.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:center top"></video>
-    </div>
-    <div class="cs-stats">
-      <div class="stat"><div class="stat-n">2022</div><div class="stat-l">Founded</div></div>
-      <div class="stat"><div class="stat-n">£0</div><div class="stat-l">External funding</div></div>
-      <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Countries shipped</div></div>
-      <div class="stat"><div class="stat-n">Self-funded</div><div class="stat-l">No agency</div></div>
     </div>
   </div>
 
-  <!-- SKILOH -->
-  <div class="cs fi" style="border:1px solid var(--border);border-top:none">
-    <div style="padding:2rem 2.5rem;border-bottom:1px solid var(--border)">
-      <div class="cs-num" style="margin-bottom:.75rem">02</div>
-      <div class="cs-title" style="margin-bottom:.4rem">Skiloh Golf Coaching</div>
-      <p style="font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,242,.3);margin-bottom:1rem">Client Work</p>
-      <div class="cs-tags" style="margin-bottom:1.5rem">
-        <span class="cs-tag">Web Design and Build</span>
-        <span class="cs-tag">Brand Identity</span>
-        <span class="cs-tag">Copywriting</span>
-        <span class="cs-tag">Sponsor Integration</span>
+  <!-- 02 — VANITY FRIDAY -->
+  <div class="cs2 fi">
+    <div class="cs2-header" data-cs="cs2-02">
+      <div class="cs2-left">
+        <span class="cs2-num">02</span>
+        <span class="cs2-name">VX Pub Golf Night · Vanity Friday</span>
+        <div class="cs2-tags">
+          <span class="cs2-tag">Live Brand Event</span>
+          <span class="cs2-tag">Nightclub Collab</span>
+          <span class="cs2-tag">Prize Drop</span>
+          <span class="cs2-tag">Brand Promo</span>
+        </div>
       </div>
-      <p style="font-size:.82rem;line-height:1.85;color:var(--muted);margin-bottom:1.5rem;max-width:640px">PGA professional Sam Kiloh required a premium, conversion focused website reflecting his coaching credentials. The brief covered brand positioning, visual identity, copywriting, responsive design, sponsor integration and GDPR compliance. Sponsors include Arccos Golf, Deeside Golf Club, GymCaddie and TRS. Built, tested and live within weeks of brief.</p>
-      <a href="https://samkiloh.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit samkiloh.com ↗</a>
+      <span class="cs2-toggle">Open ↓</span>
     </div>
-    <div style="overflow:hidden;border-bottom:1px solid var(--border);aspect-ratio:16/7">
-      <video src="sam-preview.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;object-position:center top"></video>
+    <div class="cs2-body" id="cs2-02">
+      <div class="cs2-copy">
+        <p>A live brand activation delivered in collaboration with Babylon Club. The Vanity Friday pub golf night brought the VX community together with a themed course, prize drop and exclusive merchandise.</p>
+        <p>Brand consistent throughout and designed to generate organic content. The event put VX product directly into the hands of the community and created genuine brand engagement in a live setting.</p>
+      </div>
+      <div class="cs2-media">
+        <video src="733930c3e2f247a1b858cccd4b48565b.mp4" autoplay muted loop playsinline></video>
+        <span class="cs2-caption">Vanity Friday · Babylon Club</span>
+      </div>
     </div>
-    <div class="cs-stats">
-      <div class="stat"><div class="stat-n">1 Page</div><div class="stat-l">Full single-page build</div></div>
-      <div class="stat"><div class="stat-n">6+</div><div class="stat-l">Sponsor logos</div></div>
-      <div class="stat"><div class="stat-n">PGA Pro</div><div class="stat-l">Client profile</div></div>
-      <div class="stat"><div class="stat-n">Weeks</div><div class="stat-l">Concept to live</div></div>
+  </div>
+
+  <!-- 03 — POP UP AND PRO SHOP -->
+  <div class="cs2 fi">
+    <div class="cs2-header" data-cs="cs2-03">
+      <div class="cs2-left">
+        <span class="cs2-num">03</span>
+        <span class="cs2-name">Golf Pro Shops · Pop-Up Markets</span>
+        <div class="cs2-tags">
+          <span class="cs2-tag">Pro Shop Placement</span>
+          <span class="cs2-tag">Pop-Up Retail</span>
+          <span class="cs2-tag">Brand Promo</span>
+        </div>
+      </div>
+      <span class="cs2-toggle">Open ↓</span>
+    </div>
+    <div class="cs2-stacked" id="cs2-03">
+      <div class="cs2-copy1">
+        <span class="cs2-copy-label">Golf Pro Shops</span>
+        <p>Pro shop placement at Deeside Golf Club established VX product on the shop floor alongside recognised names in a professional golf environment. Stocked, merchandised and selling.</p>
+      </div>
+      <div class="cs2-photo">
+        <img src="IMG_1522.jpeg" alt="Deeside Golf Club pro shop" loading="lazy">
+      </div>
+      <div class="cs2-copy2">
+        <span class="cs2-copy-label">Pop-Up Markets</span>
+        <p>Pop-up market activations brought the brand directly to customers. Physical product, live brand presence and real conversation. Self-managed and commercially effective.</p>
+      </div>
+      <div class="cs2-video">
+        <video src="popup-market.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 — TOUR SPONSORSHIP -->
+  <div class="cs2 fi">
+    <div class="cs2-header" data-cs="cs2-04">
+      <div class="cs2-left">
+        <span class="cs2-num">04</span>
+        <span class="cs2-name">Local Tour Sponsorship</span>
+        <div class="cs2-tags">
+          <span class="cs2-tag">Pro Tour</span>
+          <span class="cs2-tag">PGA Professionals</span>
+          <span class="cs2-tag">Amateur</span>
+          <span class="cs2-tag">Grass Roots</span>
+        </div>
+      </div>
+      <span class="cs2-toggle">Open ↓</span>
+    </div>
+    <div class="cs2-body" id="cs2-04">
+      <div class="cs2-copy">
+        <p>VX partnered with Gary Ward, an Irish professional golfer, during his first season on the Farmfoods Tartan Pro Tour circuit in Scotland. The partnership provided kit and brand support while giving VX credible exposure at professional tour level — a natural fit for a brand built around the game.</p>
+        <p>VX has also provided kit and sponsorship to local amateur golfers and club Pennant teams, supporting the game at grass roots level with genuine investment in the people who play it.</p>
+      </div>
+      <div class="cs2-media">
+        <img src="IMG_2528__1_.png" alt="VX tour sponsorship" loading="lazy">
+        <span class="cs2-caption">Farmfoods Tartan Pro Tour · Scotland</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 — SKILOH -->
+  <div class="cs2 fi">
+    <div class="cs2-header" data-cs="cs2-05">
+      <div class="cs2-left">
+        <span class="cs2-num">05</span>
+        <span class="cs2-name">Client Website Build · Skiloh Golf Coaching</span>
+        <div class="cs2-tags">
+          <span class="cs2-tag">Client Work</span>
+          <span class="cs2-tag">Web Design and Build</span>
+          <span class="cs2-tag">PGA Professional</span>
+        </div>
+      </div>
+      <span class="cs2-toggle">Open ↓</span>
+    </div>
+    <div class="cs2-body" id="cs2-05">
+      <div class="cs2-copy">
+        <p>PGA professional Sam Kiloh required a website that reflected his coaching credentials and converted visitors into enquiries. The brief covered brand positioning, visual identity, copywriting, responsive design, sponsor integration and GDPR compliance. Concept to live within weeks.</p>
+        <a href="https://samkiloh.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit samkiloh.com ↗</a>
+      </div>
+      <div class="cs2-browser">
+        <div class="cs2-bar">
+          <div class="cs2-dots"><span class="cs2-dot"></span><span class="cs2-dot"></span><span class="cs2-dot"></span></div>
+          <span class="cs2-url">samkiloh.com</span>
+        </div>
+        <video src="vx-preview.mp4" autoplay muted loop playsinline></video>
+      </div>
     </div>
   </div>
 
@@ -674,7 +798,7 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
 
 <!-- FOOTER -->
 <footer>
-  <a href="#" class="f-logo"><img src="dotx_V1_black__1_.PNG" alt="dot.x"></a>
+  <a href="#" class="f-logo"><img src="dotx-logo-circle.png" alt="dot.x"></a>
   <ul class="f-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -684,14 +808,16 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
     <li><a href="https://www.instagram.com/dot.xrepresentative" target="_blank" rel="noopener noreferrer">Instagram</a></li>
     <li><a href="#" id="privLink">Privacy</a></li>
   </ul>
-  <p class="f-copy">© 2026 dot.x Representative · United Kingdom</p>
-  <p class="f-acqua">A <a href="https://acquautilitiesmedia.com" target="_blank" rel="noopener noreferrer">Acqua Utilities Media Limited</a> company</p>
-  <p class="f-acqua" style="margin-top:.4rem">
-    <a href="#" style="display:inline-flex;align-items:center;gap:.4rem;color:rgba(245,245,242,.3);text-decoration:none;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;transition:color .2s">
-      <img src="dotx_V1_black__1_.PNG" alt="dot.x" style="width:16px;height:16px;border-radius:50%;display:inline-block;object-fit:cover;">
-      Built by dot.x
-    </a>
-  </p>
+  <div style="text-align:right">
+    <p class="f-copy">© 2026 dot.x Representative · United Kingdom</p>
+    <p class="f-acqua" style="margin-top:.3rem">An <a href="https://acquautilitiesmedia.com" target="_blank" rel="noopener noreferrer">Acqua Utilities Media Limited</a> company</p>
+    <p class="f-acqua" style="margin-top:.3rem">
+      <a href="https://dotxrepresentative.com" style="display:inline-flex;align-items:center;gap:.4rem;color:rgba(245,245,242,.3);text-decoration:none;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;transition:color .2s">
+        <img src="dotx_V1_black__1_.PNG" alt="dot.x" style="width:16px;height:16px;border-radius:50%;display:inline-block;object-fit:cover;">
+        Built by dot.x
+      </a>
+    </p>
+  </div>
 </footer>
 
 <!-- PRIVACY -->
@@ -717,7 +843,7 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
   document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;c.style.left=mx+'px';c.style.top=my+'px'});
   function anim(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;r.style.left=rx+'px';r.style.top=ry+'px';requestAnimationFrame(anim)}
   anim();
-  document.querySelectorAll('a,button,.cs-header').forEach(el=>{
+  document.querySelectorAll('a,button,.cs-header,.cs2-header').forEach(el=>{
     el.addEventListener('mouseenter',()=>{r.style.width='48px';r.style.height='48px';c.style.transform='translate(-50%,-50%) scale(0.4)'});
     el.addEventListener('mouseleave',()=>{r.style.width='30px';r.style.height='30px';c.style.transform='translate(-50%,-50%) scale(1)'});
   });
@@ -738,6 +864,27 @@ footer{border-top:1px solid var(--border);padding:2rem;display:flex;align-items:
     entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target)}})
   },{threshold:0.08});
   document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+})();
+
+// CASE STUDY ACCORDIONS (cs2)
+(function(){
+  document.querySelectorAll('.cs2-header').forEach(hdr=>{
+    hdr.addEventListener('click',()=>{
+      const id=hdr.dataset.cs;
+      const body=document.getElementById(id);
+      const toggle=hdr.querySelector('.cs2-toggle');
+      const isOpen=body.classList.contains('open')||(body.style.display==='grid');
+      // close all
+      document.querySelectorAll('.cs2-body').forEach(b=>b.classList.remove('open'));
+      document.querySelectorAll('.cs2-stacked').forEach(b=>b.style.display='none');
+      document.querySelectorAll('.cs2-toggle').forEach(t=>t.textContent='Open ↓');
+      if(!isOpen){
+        if(id==='cs2-03'){body.style.display='grid'}
+        else{body.classList.add('open')}
+        toggle.textContent='Close ↑';
+      }
+    });
+  });
 })();
 
 // CASE STUDY ACCORDIONS
