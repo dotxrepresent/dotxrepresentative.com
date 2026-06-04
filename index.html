@@ -339,7 +339,7 @@ section{padding:3.5rem 2rem}
 @media(max-width:768px){
   nav{padding:.75rem 1.25rem}
   .hero-bg{width:80vw;right:-15%}
-  .hero-content{padding:4.5rem 1.25rem 2.5rem}
+  .hero-content{padding:3.5rem 1.25rem 2.5rem}
   .hero h1{margin-bottom:1.25rem}
   .hero-sub{margin-bottom:1.5rem}
   .hero-eyebrow{margin-bottom:1rem}
@@ -386,6 +386,17 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
 .f-acqua{font-size:.6rem;letter-spacing:.1em;color:rgba(245,245,242,.5);text-transform:uppercase}
 .f-acqua a{color:rgba(245,245,242,.6);text-decoration:none;transition:color .2s}
 .f-acqua a:hover{color:rgba(245,245,242,.85)}
+.f-built{display:inline-flex;align-items:center;gap:.4rem;color:rgba(245,245,242,.5);text-decoration:none;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;transition:color .2s}
+.f-built:hover{color:var(--white)}
+.f-built img{width:16px;height:16px;border-radius:50%;display:inline-block}
+
+@media(max-width:768px){
+  footer{flex-direction:column;align-items:center;text-align:center;padding:2rem 1.25rem;gap:1.25rem}
+  .f-logo{display:none}
+  .f-links{justify-content:center;gap:.75rem 1.25rem}
+  .f-right{display:flex;flex-direction:column;align-items:center;gap:.5rem}
+  .f-built-wrap{margin-top:.25rem}
+}
 
 /* LIGHTBOX */
 .lb{display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.93);align-items:center;justify-content:center;padding:2rem}
@@ -761,7 +772,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
         <span class="lbl">Email</span>
         <a href="mailto:dot.xrepresent@outlook.com">dot.xrepresent@outlook.com</a>
         <span class="lbl">LinkedIn</span>
-        <a href="https://www.linkedin.com/company/dot-xrepresentative/" target="_blank" rel="noopener noreferrer">dot.x Representative ↗</a>
+        <a href="https://www.linkedin.com/company/dot-xrepresentative/" target="_blank" rel="noopener noreferrer">@dot.xrepresentative ↗</a>
         <span class="lbl">Instagram</span>
         <a href="https://www.instagram.com/dot.xrepresentative" target="_blank" rel="noopener noreferrer">@dot.xrepresentative ↗</a>
         <span class="lbl">Based in</span>
@@ -817,12 +828,12 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
     <li><a href="https://www.instagram.com/dot.xrepresentative" target="_blank" rel="noopener noreferrer">Instagram</a></li>
     <li><a href="#" id="privLink">Privacy</a></li>
   </ul>
-  <div style="text-align:right">
+  <div class="f-right" style="text-align:right">
     <p class="f-copy">© 2026 dot.x Representative · United Kingdom</p>
     <p class="f-acqua" style="margin-top:.3rem">An <a href="https://acquautilitiesmedia.com" target="_blank" rel="noopener noreferrer">Acqua Utilities Media Limited</a> company</p>
-    <p class="f-acqua" style="margin-top:.3rem">
-      <a href="https://dotxrepresentative.com" style="display:inline-flex;align-items:center;gap:.4rem;color:rgba(245,245,242,.5);text-decoration:none;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;transition:color .2s">
-        <img src="dotx_V1_black__1_.PNG" alt="dot.x" style="width:16px;height:16px;border-radius:50%;display:inline-block;object-fit:cover;">
+    <p class="f-built-wrap" style="margin-top:.3rem">
+      <a href="https://dotxrepresentative.com" class="f-built">
+        <img src="dotx-logo-circle.png" alt="dot.x">
         Built by dot.x
       </a>
     </p>
