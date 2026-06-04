@@ -339,7 +339,8 @@ section{padding:3.5rem 2rem}
 @media(max-width:768px){
   nav{padding:.75rem 1.25rem}
   .hero-bg{width:80vw;right:-15%}
-  .hero-content{padding:3.5rem 1.25rem 2.5rem}
+  .hero{min-height:unset;justify-content:flex-start;padding:5rem 1.25rem 3rem}
+  .hero-content{padding:0}
   .hero h1{margin-bottom:1.25rem}
   .hero-sub{margin-bottom:1.5rem}
   .hero-eyebrow{margin-bottom:1rem}
@@ -393,7 +394,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
 @media(max-width:768px){
   footer{flex-direction:column;align-items:center;text-align:center;padding:2rem 1.25rem;gap:1.25rem}
   .f-logo{display:none}
-  .f-links{justify-content:center;gap:.75rem 1.25rem}
+  .f-links{display:grid;grid-template-columns:repeat(3,auto);gap:.6rem 1.5rem;justify-content:center}
   .f-right{display:flex;flex-direction:column;align-items:center;gap:.5rem}
   .f-built-wrap{margin-top:.25rem}
 }
@@ -825,7 +826,6 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
     <li><a href="#work">Work</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="https://www.linkedin.com/company/dot-xrepresentative/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-    <li><a href="https://www.instagram.com/dot.xrepresentative" target="_blank" rel="noopener noreferrer">Instagram</a></li>
     <li><a href="#" id="privLink">Privacy</a></li>
   </ul>
   <div class="f-right" style="text-align:right">
