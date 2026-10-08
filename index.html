@@ -422,6 +422,27 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
 .fi{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 .fi.v{opacity:1;transform:translateY(0)}
 </style>
+<style>
+/* ===== SHARED KIT: reCAPTCHA and cookie notice ===== */
+.rc-wrap{padding:1rem 1.25rem .9rem;display:flex;flex-direction:column;gap:.55rem}
+.rc-widget{min-height:78px}
+.rc-msg{display:none;font-size:.78rem;line-height:1.5;color:#c0392b}
+.rc-msg.show{display:block}
+.rc-note{font-size:.68rem;line-height:1.6;opacity:.75;margin:0}
+.rc-note a{text-decoration:underline}
+@media(max-width:360px){.rc-widget{transform:scale(.88);transform-origin:0 0;min-height:70px}}
+.kit-hp{position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden}
+.ck-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:100000;max-width:620px;margin:0 auto;background:#141414;color:#f5f5f2;font-family:'DM Mono',monospace;
+  display:flex;align-items:center;gap:1rem;padding:.95rem 1.1rem;box-shadow:0 12px 32px rgba(0,0,0,.25);border-radius:4px;transform:translateY(140%);transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.ck-bar.show{transform:none}
+.ck-bar p{margin:0;font-size:.78rem;line-height:1.6;color:rgba(245,245,242,.72);flex:1}
+.ck-bar a{color:#f5f5f2;text-decoration:underline}
+.ck-bar button{flex-shrink:0;background:#f5f5f2;color:#080808;border:0;padding:.6rem 1.3rem;font-family:'DM Mono',monospace;font-size:.78rem;font-weight:500;letter-spacing:.04em;cursor:pointer;border-radius:2px}
+@media(max-width:560px){.ck-bar{flex-direction:column;align-items:stretch;text-align:left}.ck-bar button{width:100%}}
+@media(prefers-reduced-motion:reduce){.ck-bar{transition:none}}
+.c-form .rc-wrap{border-bottom:1px solid var(--border);color:rgba(245,245,242,.6)}
+.c-form .rc-wrap a{color:inherit}
+</style>
 </head>
 <body>
 
@@ -852,11 +873,12 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
   <div class="modal-box">
     <button class="modal-x" id="privClose">✕</button>
     <h2>Privacy Policy</h2>
-    <p style="font-size:.6rem;color:rgba(245,245,242,.42);letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem">Last updated: January 2025</p>
+    <p style="font-size:.6rem;color:rgba(245,245,242,.42);letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem">Last updated: October 2026</p>
     <h3>Who we are</h3><p>DotX Representative operates under Acqua Utilities Media Ltd, United Kingdom. Contact: <a href="mailto:dot.xrepresent@outlook.com">dot.xrepresent@outlook.com</a></p>
-    <h3>What we collect</h3><p>When you submit an enquiry we collect your name, email, company details and message. No payment information. No tracking cookies.</p>
+    <h3>What we collect</h3><p>When you submit an enquiry we collect your name, email, company details and message. No payment information.</p>
     <h3>How we use it</h3><p>Your details are used solely to respond to your enquiry. We never sell or share your data for marketing.</p>
-    <h3>Storage</h3><p>Submissions processed via Formspree (GDPR compliant), delivered to our inbox. No data stored on this site.</p>
+    <h3>Storage</h3><p>Submissions are processed via Formspree (GDPR compliant) and delivered to our team inbox, after a Google reCAPTCHA check to block spam. No data is stored on this website.</p>
+    <h3>Cookies</h3><p>We do not use analytics, tracking or advertising cookies. Our enquiry forms use Google reCAPTCHA to protect against spam. reCAPTCHA sets cookies and collects technical information such as your IP address that are strictly necessary for this security check, and its use is governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>. When you dismiss our cookie notice, that choice is saved in your browser so the notice is not shown again.</p>
     <h3>Your rights</h3><p>Under UK GDPR you have the right to access, correct or delete any data we hold. Email <a href="mailto:dot.xrepresent@outlook.com">dot.xrepresent@outlook.com</a>.</p>
   </div>
 </div>
@@ -981,6 +1003,70 @@ document.querySelectorAll('.snd-btn').forEach(btn=>{
   lnk.addEventListener('click',e=>{e.preventDefault();mod.style.display='block';document.body.style.overflow='hidden'});
   cl.addEventListener('click',()=>{mod.style.display='none';document.body.style.overflow=''});
   mod.addEventListener('click',e=>{if(e.target===mod){mod.style.display='none';document.body.style.overflow=''}});
+})();
+</script>
+<script>
+/* ===== SHARED KIT: reCAPTCHA and cookie notice ===== */
+(function(){
+  var SITE_KEY='6Lfe2uUtAAAAANqd8pV9O2XDxK7TEW1LigMhl99Z';
+  var forms=[].slice.call(document.querySelectorAll('form[action*="formspree.io"]'));
+
+  /* add honeypot, reCAPTCHA box and notice to every enquiry form */
+  forms.forEach(function(f){
+    if(!f.querySelector('input[name="_gotcha"]')){
+      var hp=document.createElement('div');hp.className='kit-hp';hp.setAttribute('aria-hidden','true');
+      hp.innerHTML='<label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>';
+      f.appendChild(hp);
+    }
+    var btn=f.querySelector('button[type="submit"],input[type="submit"]');
+    var anchor=btn;while(anchor&&anchor.parentNode!==f)anchor=anchor.parentNode;
+    var wrap=document.createElement('div');wrap.className='rc-wrap';
+    wrap.innerHTML='<div class="rc-widget"></div><p class="rc-msg" role="alert">Please tick the box to confirm you are not a robot.</p>'+
+      '<p class="rc-note">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.</p>';
+    if(anchor)f.insertBefore(wrap,anchor);else f.appendChild(wrap);
+    f._rcWrap=wrap;
+  });
+
+  window.kitRecaptchaReady=function(){
+    forms.forEach(function(f){
+      try{f._rcId=grecaptcha.render(f._rcWrap.querySelector('.rc-widget'),{sitekey:SITE_KEY,theme:'dark',callback:function(){f._rcWrap.querySelector('.rc-msg').classList.remove('show')}})}catch(err){}
+    });
+  };
+  if(forms.length){
+    var s=document.createElement('script');
+    s.src='https://www.google.com/recaptcha/api.js?onload=kitRecaptchaReady&render=explicit';
+    s.async=true;s.defer=true;document.head.appendChild(s);
+  }
+
+  /* runs before each form's own send script */
+  document.addEventListener('submit',function(e){
+    var f=e.target;if(forms.indexOf(f)<0)return;
+    var hp=f.querySelector('input[name="_gotcha"]');
+    if(hp&&hp.value){e.preventDefault();e.stopImmediatePropagation();return}
+    var ok=window.grecaptcha&&f._rcId!==undefined&&grecaptcha.getResponse(f._rcId);
+    if(!ok){
+      e.preventDefault();e.stopImmediatePropagation();
+      f._rcWrap.querySelector('.rc-msg').classList.add('show');
+      f._rcWrap.scrollIntoView({block:'center',behavior:'smooth'});
+      return;
+    }
+    /* tokens are single use: refresh the box if the form is still showing afterwards */
+    setTimeout(function(){if(f.offsetParent!==null){try{grecaptcha.reset(f._rcId)}catch(err){}}},6000);
+  },true);
+
+  /* cookie notice */
+  var KEY='cookie-notice-ok',seen=false;
+  try{seen=localStorage.getItem(KEY)==='1'}catch(err){}
+  if(seen)return;
+  var bar=document.createElement('div');bar.className='ck-bar';bar.setAttribute('role','region');bar.setAttribute('aria-label','Cookie notice');
+  bar.innerHTML='<p>We only use essential cookies, including Google reCAPTCHA to protect our forms from spam. We do not use analytics, tracking or advertising cookies. <a href="#" class="ck-priv">Privacy and cookies</a></p><button type="button">OK</button>';
+  document.body.appendChild(bar);
+  requestAnimationFrame(function(){requestAnimationFrame(function(){bar.classList.add('show')})});
+  bar.querySelector('.ck-priv').addEventListener('click',function(e){e.preventDefault();var l=document.getElementById('privLink');if(l)l.click();});
+  bar.querySelector('button').addEventListener('click',function(){
+    try{localStorage.setItem(KEY,'1')}catch(err){}
+    bar.classList.remove('show');setTimeout(function(){bar.remove()},500);
+  });
 })();
 </script>
 </body>
