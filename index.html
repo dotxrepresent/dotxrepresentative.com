@@ -214,6 +214,18 @@ section{padding:3.5rem 2rem}
 .cs2-dot:nth-child(3){background:#28c840}
 .cs2-url{flex:1;background:rgba(255,255,255,.06);border-radius:3px;padding:.2rem .75rem;font-family:var(--mono);font-size:.56rem;letter-spacing:.06em;color:rgba(255,255,255,.35);text-align:center}
 .cs2-browser video{width:100%;height:auto;display:block}
+.cs2-browser img{width:100%;height:auto;display:block}
+.platforms{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:0 2rem 2.5rem}
+.plat{background:var(--black);padding:1.75rem 1.6rem;display:flex;flex-direction:column;gap:.7rem}
+.plat-name{font-family:var(--display);font-size:1.25rem;letter-spacing:.04em;text-transform:uppercase;color:var(--white)}
+.plat p{font-size:.85rem;line-height:1.75;color:rgba(245,245,242,.82)}
+.plat-eg{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,242,.6);margin-top:auto}
+.cs2-scope{display:flex;flex-direction:column;justify-content:center;gap:1rem;padding:3rem 2.5rem;background:var(--black)}
+.cs2-scope-title{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,245,242,.6)}
+.cs2-scope ul{list-style:none;display:grid;gap:.6rem;padding:0;margin:0}
+.cs2-scope li{font-size:.85rem;line-height:1.6;color:rgba(245,245,242,.88);padding-left:1rem;position:relative}
+.cs2-scope li:before{content:"";position:absolute;left:0;top:.7em;width:.45rem;height:1px;background:rgba(245,245,242,.6)}
+@media(max-width:900px){.platforms{grid-template-columns:1fr;margin:0 1.25rem 2rem}.cs2-scope{padding:2rem 1.5rem}}
 
 /* Section 03 — copy left, stacked media right */
 .cs2-stacked{display:none;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;grid-template-areas:"copy1 photo" "copy2 video";border-top:1px solid var(--border)}
@@ -543,7 +555,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
       <p class="svc-desc">Websites designed and built to a professional standard. From single page sites to full e-commerce. Clean, fast, mobile optimised and built to perform.</p>
       <ul class="svc-list">
         <li>UX design and development</li>
-        <li>HTML, CSS, JS, Shopify or Webflow</li>
+        <li>Custom code, WordPress or Shopify</li>
         <li>Mobile optimised, SEO ready</li>
         <li>One month post-launch support</li>
       </ul>
@@ -628,14 +640,32 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
     <h2 class="s-h2 fi">Proof of <em>work.</em></h2>
   </div>
 
-  <!-- 01 — VX ECOMMERCE -->
+  <div class="platforms fi">
+    <div class="plat">
+      <div class="plat-name">Custom Code</div>
+      <p>Hand-built sites in HTML, CSS and JavaScript. Fast, secure and fully bespoke, with no theme limits, hosted on GitHub Pages and connected to your own domain.</p>
+      <span class="plat-eg">Vintxge Golf · Skiloh Golf Coaching · Kinetica Travel</span>
+    </div>
+    <div class="plat">
+      <div class="plat-name">WordPress</div>
+      <p>Corporate sites your team can edit themselves. New builds, or rebuilds of existing WordPress and Bricks Builder sites, with compliance, spam protection and cookie consent built in.</p>
+      <span class="plat-eg">Energy sector manufacturer</span>
+    </div>
+    <div class="plat">
+      <div class="plat-name">Shopify</div>
+      <p>Online stores with product pages, checkout and multi-currency selling, plus integrations with suppliers and payment providers.</p>
+      <span class="plat-eg">Vintxge Golf (original store)</span>
+    </div>
+  </div>
+
+  <!-- 01 — VX -->
   <div class="cs2 fi">
     <div class="cs2-header" data-cs="cs2-01">
       <div class="cs2-left">
         <span class="cs2-num">01</span>
         <span class="cs2-name">Vintxge Golf</span>
         <div class="cs2-tags">
-          <span class="cs2-tag">Shopify E-Commerce</span>
+          <span class="cs2-tag">Custom Code</span>
           <span class="cs2-tag">Brand Identity</span>
           <span class="cs2-tag">VX Members Club</span>
           <span class="cs2-tag">10+ Countries</span>
@@ -645,8 +675,8 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
     </div>
     <div class="cs2-body" id="cs2-01">
       <div class="cs2-copy">
-        <p>Vintxge Golf is a self-funded golf apparel brand built from scratch on Shopify. The full build covered brand identity, product pages, multi-currency checkout and supplier integrations. A private VX Members Club was developed as a gated tier for ambassadors and golf club representatives, with exclusive pricing and content.</p>
-        <p>Built entirely in-house, without agency support or external funding. Live and trading internationally from launch.</p>
+        <p>Vintxge Golf is a self-funded golf apparel brand built from scratch. It launched as a Shopify store with product pages, multi-currency checkout and supplier integrations, trading internationally from day one.</p>
+        <p>The brand now runs on a bespoke, custom-coded site built around enquiry by commission, with a private VX Members Club for ambassadors and golf club representatives. Built entirely in-house, without agency support or external funding.</p>
         <a href="https://vintxgegolf.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit vintxgegolf.com ↗</a>
       </div>
       <div class="cs2-browser">
@@ -770,6 +800,70 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
           <span class="cs2-url">samkiloh.com</span>
         </div>
         <video src="vx-preview.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 — KINETICA -->
+  <div class="cs2 fi">
+    <div class="cs2-header" data-cs="cs2-06">
+      <div class="cs2-left">
+        <span class="cs2-num">06</span>
+        <span class="cs2-name">Client Website Build · Kinetica Travel</span>
+        <div class="cs2-tags">
+          <span class="cs2-tag">Client Work</span>
+          <span class="cs2-tag">Custom Code</span>
+          <span class="cs2-tag">Travel and Tourism</span>
+        </div>
+      </div>
+      <span class="cs2-toggle">Open ↓</span>
+    </div>
+    <div class="cs2-body" id="cs2-06">
+      <div class="cs2-copy">
+        <p>Kinetica Travel runs small group sport and safari tours across Rwanda, from cricket at Africa's most beautiful ground to golf above Kigali and mountain gorillas in the Virunga forests. The brief was a site that sold the experience and turned interest into enquiries. The build covered the full design, photography led layouts, tour pages, enquiry handling, responsive design and domain setup, hand-coded and hosted on GitHub Pages.</p>
+        <a href="https://kineticatravel.com" target="_blank" rel="noopener noreferrer" class="cs-ext">Visit kineticatravel.com ↗</a>
+      </div>
+      <div class="cs2-browser">
+        <div class="cs2-bar">
+          <div class="cs2-dots"><span class="cs2-dot"></span><span class="cs2-dot"></span><span class="cs2-dot"></span></div>
+          <span class="cs2-url">kineticatravel.com</span>
+        </div>
+        <img src="kinetica-preview.webp" alt="Kinetica Travel website home page" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 — ENERGY SECTOR CLIENT (anonymised) -->
+  <div class="cs2 fi">
+    <div class="cs2-header" data-cs="cs2-07">
+      <div class="cs2-left">
+        <span class="cs2-num">07</span>
+        <span class="cs2-name">Corporate Website Rebuild · Energy Sector Client</span>
+        <div class="cs2-tags">
+          <span class="cs2-tag">Client Work</span>
+          <span class="cs2-tag">WordPress</span>
+          <span class="cs2-tag">Bricks Builder</span>
+          <span class="cs2-tag">Delivered 2026</span>
+        </div>
+      </div>
+      <span class="cs2-toggle">Open ↓</span>
+    </div>
+    <div class="cs2-body" id="cs2-07">
+      <div class="cs2-copy">
+        <p>A long established UK manufacturer of oilfield engineering products needed its corporate website modernised. The existing WordPress site had inconsistent styling, dated content, weak mobile performance and gaps in compliance.</p>
+        <p>Delivered under a formal engagement letter with a defined scope of work. The site was rebuilt in Bricks Builder on a separate test environment, so the live website stayed untouched until launch, then switched over with no downtime. The project is complete and the client's team now manages the site day to day.</p>
+      </div>
+      <div class="cs2-scope">
+        <span class="cs2-scope-title">Scope of work</span>
+        <ul>
+          <li>Visual style and brand consistency across every page</li>
+          <li>Full text and product content refresh</li>
+          <li>Internal linking and site structure</li>
+          <li>GDPR compliance and cookie consent</li>
+          <li>reCAPTCHA spam protection on forms</li>
+          <li>Mobile optimisation</li>
+          <li>Staged launch with no downtime</li>
+        </ul>
       </div>
     </div>
   </div>
