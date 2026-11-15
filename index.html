@@ -241,7 +241,9 @@ section{padding:3.5rem 2rem}
 @media(max-width:900px){
   .cs2-body.open{grid-template-columns:1fr}
   .cs2-copy{border-right:none;border-bottom:1px solid var(--border)}
-  .cs2-left{gap:1rem}
+  .cs2-left{gap:1rem;flex-wrap:nowrap;align-items:baseline;min-width:0}
+  .cs2-num{flex:0 0 1.6rem}
+  .cs2-name{min-width:0}
   .cs2-tags{display:none}
   .cs2-stacked{grid-template-columns:1fr;grid-template-rows:auto;grid-template-areas:"copy1" "photo" "copy2" "video"}
   .cs2-copy1{border-right:none}
