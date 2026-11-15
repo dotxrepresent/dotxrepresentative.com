@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark only">
 <title>DotX Representative | Startup Advisory and Brand Consultancy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-dotx.png">
 <link rel="manifest" href="dotx-site.webmanifest">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#080808">
 
 <!-- SEO -->
 <meta name="description" content="DotX Representative is a brand and startup consultancy based in the UK. Brand identity, web design and build, photography, brand events and go to market advisory. Primary focus on the sports and golf sector. Operating under Acqua Utilities Media Limited.">
@@ -76,7 +77,7 @@
   --serif:'Fraunces',Georgia,serif;
   --mono:'DM Mono',monospace;
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;color-scheme:dark}
 body{font-family:var(--mono);background:var(--black);color:var(--white);overflow-x:hidden;cursor:none}
 
 /* CURSOR */
@@ -456,6 +457,23 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
 @media(prefers-reduced-motion:reduce){.ck-bar{transition:none}}
 .c-form .rc-wrap{border-bottom:1px solid var(--border);color:rgba(245,245,242,.6)}
 .c-form .rc-wrap a{color:inherit}
+</style>
+<style>
+/* ============ iOS 27 refresh (Nov 2026): glass header, glass menu, compact cookie notice ============ */
+nav{background:rgba(8,8,8,.72) !important;-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%);border-bottom-color:rgba(255,255,255,.08) !important}
+.mob-nav{background:rgba(8,8,8,.86) !important;-webkit-backdrop-filter:blur(28px) saturate(160%);backdrop-filter:blur(28px) saturate(160%)}
+.mob-nav.open a{opacity:0;transform:translateY(10px);animation:iosIn .45s cubic-bezier(.16,1,.3,1) forwards}
+.mob-nav.open a:nth-of-type(2){animation-delay:.04s}.mob-nav.open a:nth-of-type(3){animation-delay:.08s}.mob-nav.open a:nth-of-type(4){animation-delay:.12s}.mob-nav.open a:nth-of-type(5){animation-delay:.16s}.mob-nav.open a:nth-of-type(6){animation-delay:.2s}.mob-nav.open a:nth-of-type(7){animation-delay:.24s}.mob-nav.open a:nth-of-type(8){animation-delay:.28s}
+@keyframes iosIn{to{opacity:1;transform:none}}
+.ck-bar{background:rgba(20,20,20,.86) !important;-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%);border-radius:14px !important;border:1px solid rgba(255,255,255,.08)}
+@media(max-width:560px){
+  .mob-nav{gap:1.6rem !important}
+  .mob-nav a{font-size:2.4rem !important}
+  .ck-bar{flex-direction:row !important;align-items:center !important;gap:.8rem !important;padding:.7rem .75rem .7rem 1rem !important;left:12px !important;right:12px !important;bottom:12px !important}
+  .ck-bar p{font-size:.68rem !important;line-height:1.45 !important}
+  .ck-bar button{width:auto !important;padding:.55rem 1rem !important;border-radius:10px !important}
+}
+@media(prefers-reduced-motion:reduce){.mob-nav.open a{animation:none;opacity:1;transform:none}}
 </style>
 </head>
 <body>
