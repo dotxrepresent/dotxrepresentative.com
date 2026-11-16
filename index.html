@@ -436,6 +436,20 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;display:flex;align
 /* FADE */
 .fi{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 .fi.v{opacity:1;transform:translateY(0)}
+
+/* Testimonials (Nov 2026) */
+.tm-feature{margin-top:2.5rem;border:1px solid var(--border);padding:2.5rem 2.25rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end}
+.tm-q{font-family:var(--serif);font-style:italic;font-weight:200;color:var(--white);line-height:1.5;margin:0}
+.tm-feature,.tm{margin:0}
+.tm-feature .tm-q{font-size:clamp(1.25rem,2.3vw,1.8rem);max-width:46ch}
+.tm-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-top:none}
+.tm{padding:2rem 1.75rem;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:1.5rem}
+.tm:last-child{border-right:none}
+.tm .tm-q{font-size:1.15rem}
+.tm-who{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--white);margin-top:auto}
+.tm-role{display:block;font-size:.66rem;letter-spacing:.04em;text-transform:none;color:rgba(245,245,242,.6);margin-top:.4rem}
+@media(max-width:900px){.tm-grid{grid-template-columns:1fr 1fr}.tm:nth-child(2){border-right:none}.tm:nth-child(-n+2){border-bottom:1px solid var(--border)}.tm-feature{grid-template-columns:1fr}}
+@media(max-width:560px){.tm-grid{grid-template-columns:1fr}.tm{border-right:none;border-bottom:1px solid var(--border)}.tm:last-child{border-bottom:none}.tm-feature{padding:2rem 1.5rem}}
 </style>
 <style>
 /* ===== SHARED KIT: reCAPTCHA and cookie notice ===== */
@@ -933,6 +947,24 @@ nav{background:rgba(8,8,8,.72) !important;-webkit-backdrop-filter:blur(20px) sat
 
 <!-- LIGHTBOX -->
 <div class="lb" id="lb"><button class="lb-close" id="lbClose">✕</button><img src="" alt="" id="lbImg"></div>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="s-label fi">Client Words</div>
+  <h2 class="s-h2 fi">Kind <em>words.</em></h2>
+  <figure class="tm-feature fi">
+    <blockquote class="tm-q">&ldquo;I couldn&rsquo;t be happier with the new website. Matthew has been a pleasure to work with, and I look forward to collaborating with Matthew on other opportunities.&rdquo;</blockquote>
+    <figcaption class="tm-who">Founder &amp; Managing Director<span class="tm-role">Financial services firm, UK and EU</span></figcaption>
+  </figure>
+  <div class="tm-grid">
+    <figure class="tm fi"><blockquote class="tm-q">&ldquo;Thanks very much for your excellent work on the site. Looking and feeling really polished now!&rdquo;</blockquote><figcaption class="tm-who">Sales Engineer<span class="tm-role">UK energy sector manufacturer</span></figcaption></figure>
+    <figure class="tm fi"><blockquote class="tm-q">&ldquo;Best there is!&rdquo;</blockquote><figcaption class="tm-who">Sam Kiloh<span class="tm-role">PGA Professional, Skiloh Golf Coaching</span></figcaption></figure>
+    <figure class="tm fi"><blockquote class="tm-q">&ldquo;Thanks for making those changes. Really great work.&rdquo;</blockquote><figcaption class="tm-who">Managing Director<span class="tm-role">UK energy sector manufacturer</span></figcaption></figure>
+    <figure class="tm fi"><blockquote class="tm-q">&ldquo;The site looks great, thanks so much!&rdquo;</blockquote><figcaption class="tm-who">Will Hammond<span class="tm-role">Founder, Kinetica Travel</span></figcaption></figure>
+  </div>
+</section>
 
 <div class="divider"></div>
 
