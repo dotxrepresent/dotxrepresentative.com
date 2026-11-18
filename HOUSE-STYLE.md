@@ -35,3 +35,7 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Case study videos load only when scrolled into view. Keep images under 500KB.
 - Founder cards carry round photos (72px, gold hairline), same photos as the Acqua team section.
 - Matthew and Craig are co-founders of both dot.x and Vintxge Golf. Never "founder" alone.
+- Menus: desktop Services dropdown with numbered items, one line each, plus a single footer link. Phone menu is a full screen sheet: numbered service rows, Studio links, a Part of Acqua card, one Start a project button. Arrows are inline SVG, never the ↗ character (iOS shows it as an emoji).
+- Footer: brand line, three columns (Services, Studio, Connect), then a hairline and the copyright row. Same structure on Acqua in navy.
+- Tone: professional business face. Sport and golf is a service, not the origin story. Short, plain British sentences.
+- dot.x nav links to Acqua; Acqua nav links to DotX Representative.
