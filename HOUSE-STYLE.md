@@ -3,7 +3,7 @@
 Updated November 2026. Keep this in sync with every change to the site.
 
 ## Identity
-- dot.x is the digital studio of Acqua Utilities Media Limited, run by Matthew Lynas and Craig Leith. Brian Lynas is Acqua only.
+- dot.x is the digital studio of Acqua Utilities Media Limited. Brian Lynas is Acqua only.
 - Write "dot.x" in copy. "DotX Representative" only in page titles, the copyright line and the @dot.xrepresentative handle.
 - Lockup: "dot.x · An Acqua company". Footer: "The digital studio of Acqua Utilities Media Limited".
 - Titles: Matthew Lynas, Founder and Solutions Lead. Craig Leith, Co-Founder and Solutions Lead.
@@ -28,3 +28,4 @@ Updated November 2026. Keep this in sync with every change to the site.
 
 ## Phone
 - Mirror every change on phone. Testimonials and recent work swipe sideways; process steps sit two to a row; area cards hide their bullet lists.
+- Founders are not named in hero copy, descriptions or bios. Names appear only on their own founder or team cards.
