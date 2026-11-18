@@ -39,3 +39,5 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Footer: brand line, three columns (Services, Studio, Connect), then a hairline and the copyright row. Same structure on Acqua in navy.
 - Tone: professional business face. Sport and golf is a service, not the origin story. Short, plain British sentences.
 - dot.x nav links to Acqua; Acqua nav links to DotX Representative.
+- Copy: never more than one "and" in a sentence. Split the sentence or use a comma list.
+- Every site we build carries the small "Built by DotX Representative" tag with the .x circle in the footer's bottom row, including dot.x and Acqua.
