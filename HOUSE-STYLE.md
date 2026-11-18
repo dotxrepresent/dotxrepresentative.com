@@ -10,7 +10,7 @@ Updated November 2026. Keep this in sync with every change to the site.
 - dot.x keeps its own look (black and gold). Acqua keeps navy and blue.
 
 ## Copy
-- No dashes in copy. Hyphens only inside compound words (go-to-market, first-class).
+- No dashes in copy and no hyphens either: go to market, ecommerce, in house, hand built, pop up. The one exception is co-founder.
 - UK spelling. Prices as £1,000, "From £X" with a short line underneath.
 - Never name Deeside Golf Club. Benoil and Savuti appear only as "energy sector manufacturer" and "financial services firm".
 
