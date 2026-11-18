@@ -658,7 +658,7 @@ section:not(.work-section) > .platforms{margin-left:0 !important;margin-right:0 
     <a class="area" href="brand.html"><span class="area-n">01</span><span class="area-t">Brand</span><p>Identities, brand technical packs, photography and advertising that make a business look the part everywhere.</p><ul><li>Brand identity</li><li>Brand technical pack</li><li>Content and photography</li><li>Digital advertising</li></ul><span class="area-foot"><span class="area-p">From £450</span><span class="area-go">Explore →</span></span></a>
     <a class="area" href="web.html"><span class="area-n">02</span><span class="area-t">Web</span><p>Websites designed and built to a professional standard, in custom code, WordPress or Shopify.</p><ul><li>Website design and build</li><li>Brand and web bundle</li><li>Rebuilds of existing sites</li></ul><span class="area-foot"><span class="area-p">From £1,000</span><span class="area-go">Explore →</span></span></a>
     <a class="area" href="automation.html"><span class="area-n">03</span><span class="area-t">Automation</span><p>AI assistants and automated workflows built inside the Microsoft 365 you already pay for.</p><ul><li>AI email assistant</li><li>Workflow automation</li><li>Knowledge bank</li></ul><span class="area-foot"><span class="area-p">From £350</span><span class="area-go">Explore →</span></span></a>
-    <a class="area" href="sport.html"><span class="area-n">04</span><span class="area-t">Sport &amp; Golf</span><p>Advisory and go-to-market for sports brands, from founders who built their own golf brand.</p><ul><li>Startup advisory</li><li>Sport go-to-market</li><li>Clubs and coaches</li></ul><span class="area-foot"><span class="area-p">From £75</span><span class="area-go">Explore →</span></span></a>
+    <a class="area" href="sport.html"><span class="area-n">04</span><span class="area-t">Sport &amp; Golf</span><p>Advisory and go-to-market for sports brands, from founders who built their own golf brand.</p><ul><li>Startup advisory</li><li>Sport go-to-market</li><li>Events and golf days</li></ul><span class="area-foot"><span class="area-p">From £75</span><span class="area-go">Explore →</span></span></a>
   </div>
 </section>
 
@@ -754,6 +754,8 @@ section:not(.work-section) > .platforms{margin-left:0 !important;margin-right:0 
               <option value="bundle">Brand and Web Bundle</option>
               <option value="automation">Automation and AI Assistants</option>
               <option value="sport">Sport &amp; Golf</option>
+              <option value="golf-day">Golf Day or Client Entertainment</option>
+              <option value="events">Events and Photography</option>
               <option value="discovery">Discovery Session (£75)</option>
               <option value="other">Not sure yet</option>
             </select>
@@ -1008,5 +1010,7 @@ document.querySelectorAll('.snd-btn').forEach(btn=>{
 })();
 </script>
 <script>(function(){var h=location.hash.slice(1);if(/^cs2-\d+$/.test(h)){var b=document.querySelector('[data-cs="'+h+'"]');if(b){b.click();setTimeout(function(){b.scrollIntoView({block:'start'});window.scrollBy(0,-80)},120)}}})();</script>
+<script>/* preselect the service from ?enquiry= */
+(function(){try{var v=new URLSearchParams(location.search).get('enquiry');if(!v)return;document.querySelectorAll('select').forEach(function(s){if([].some.call(s.options,function(o){return o.value===v})){s.value=v;s.dispatchEvent(new Event('change',{bubbles:true}))}})}catch(e){}})();</script>
 </body>
 </html>

@@ -24,7 +24,7 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Pages: index (services overview, about, recent work, testimonials, contact), brand, web, automation, sport, work.
 - Menu: Services dropdown (Brand, Web, Automation, Sport and Golf), Work, About, Start a Project. Same on every page.
 - Service pages: page hero, service cards (two columns for 2 or 4 cards, three for 3), one supporting section, "Your project. Next." band.
-- All pages are generated from one template so the nav, footer, styles and scripts stay identical.
+- The six pages are now edited directly. Keep nav, footer, styles and scripts identical across all of them.
 
 ## Phone
 - Mirror every change on phone. Testimonials and recent work swipe sideways; process steps sit two to a row; area cards hide their bullet lists.
@@ -35,3 +35,5 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Case study videos load only when scrolled into view. Keep images under 500KB.
 - Founder cards carry round photos (72px, gold hairline), same photos as the Acqua team section.
 - Matthew and Craig are co-founders of both dot.x and Vintxge Golf. Never "founder" alone.
+- Sport & Golf page: four service cards (Advisory, Go-To-Market, Clubs and Coaches, Events and Packages) then the Professional Golf section for golf days and client entertainment.
+- Link to the form with ?enquiry=<option value>#contact to preselect the service.
