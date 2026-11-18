@@ -6,7 +6,7 @@ Updated November 2026. Keep this in sync with every change to the site.
 - dot.x is the digital studio of Acqua Utilities Media Limited. Brian Lynas is Acqua only.
 - Write "dot.x" in running copy. Use the full name "DotX Representative" in titles, the copyright line, headings and cards on the Acqua site and LinkedIn, and "DotX Representative (dot.x)" at first mention in a description.
 - Lockup: "dot.x · An Acqua company". Footer: "The digital studio of Acqua Utilities Media Limited".
-- Titles: Matthew Lynas, Founder and Solutions Lead. Craig Leith, Co-Founder and Solutions Lead.
+- Titles: Matthew Lynas and Craig Leith, both Co-Founder and Solutions Lead.
 - dot.x keeps its own look (black and gold). Acqua keeps navy and blue.
 
 ## Copy
@@ -34,4 +34,4 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Services ticker on the home page: seven services only, evenly spaced with gold dot separators, slow loop, pauses on hover, off for reduced motion.
 - Case study videos load only when scrolled into view. Keep images under 500KB.
 - Founder cards carry round photos (72px, gold hairline), same photos as the Acqua team section.
-- Matthew and Craig are both co-founders of Vintxge Golf. Matthew is founder of dot.x, Craig co-founder.
+- Matthew and Craig are co-founders of both dot.x and Vintxge Golf. Never "founder" alone.
