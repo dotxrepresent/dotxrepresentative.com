@@ -29,3 +29,4 @@ Updated November 2026. Keep this in sync with every change to the site.
 ## Phone
 - Mirror every change on phone. Testimonials and recent work swipe sideways; process steps sit two to a row; area cards hide their bullet lists.
 - Founders are not named in hero copy, descriptions or bios. Names appear only on their own founder or team cards.
+- Matthew is described as a trainee PGA Professional on dot.x only (founder bio, Sport page). Not on Acqua.
