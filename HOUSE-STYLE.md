@@ -4,7 +4,7 @@ Updated November 2026. Keep this in sync with every change to the site.
 
 ## Identity
 - dot.x is the digital studio of Acqua Utilities Media Limited. Brian Lynas is Acqua only.
-- Write "dot.x" in running copy. Use the full name "DotX Representative" in titles, the copyright line, headings and cards on the Acqua site and LinkedIn, and "DotX Representative (dot.x)" at first mention in a description.
+- Bios, team roles, credits and any professional reference on Acqua or elsewhere use the full name "DotX Representative". "dot.x" only in running copy on the dot.x site and short menu links.
 - Lockup: "dot.x · An Acqua company". Footer: "The digital studio of Acqua Utilities Media Limited".
 - Titles: Matthew Lynas and Craig Leith, both Co-Founder and Solutions Lead.
 - dot.x keeps its own look (black and gold). Acqua keeps navy and blue.
