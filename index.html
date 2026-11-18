@@ -151,7 +151,7 @@ section{padding:3.5rem 2rem}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:2rem}.about-right{border-left:none;border-top:1px solid var(--border);padding-left:0;padding-top:2rem}}
 
 /* SERVICES */
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:2.5rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:2.5rem}.svc-wide{grid-column:1/-1}.svc-wide .svc-list{display:grid;grid-template-columns:repeat(3,1fr);column-gap:2rem}@media(max-width:900px){.svc-wide .svc-list{grid-template-columns:1fr 1fr}}@media(max-width:600px){.svc-wide .svc-list{grid-template-columns:1fr}}
 .svc{background:var(--black);padding:2rem;display:flex;flex-direction:column;gap:.9rem;position:relative;transition:background .3s}
 .svc::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:var(--white);transform:scaleX(0);transform-origin:left;transition:transform .35s}
 .svc:hover::before{transform:scaleX(1)}
@@ -684,6 +684,21 @@ nav{background:rgba(8,8,8,.72) !important;-webkit-backdrop-filter:blur(20px) sat
         <li>Optional monthly upkeep from £50</li>
       </ul>
       <div class="svc-price">From £400<span>One-off build</span></div>
+    </div>
+
+    <div class="svc svc-wide fi">
+      <div class="svc-num">10</div>
+      <div class="svc-title">Brand Technical Pack</div>
+      <p class="svc-desc">Every file your team needs to present the brand consistently, designed from your website and brand, clearly named and organised in one shared folder. Ideal once a new site goes live, so LinkedIn, calls and presentations all match it.</p>
+      <ul class="svc-list">
+        <li>LinkedIn banners, logos, ads and posts</li>
+        <li>Teams and Zoom backgrounds</li>
+        <li>Personal LinkedIn banners for each team member</li>
+        <li>Branded PowerPoint template and company overview deck</li>
+        <li>Brand guidelines and presentation house style</li>
+        <li>Website reel for social channels</li>
+      </ul>
+      <div class="svc-price">From £450<span>One-off pack</span></div>
     </div>
 
   </div>
