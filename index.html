@@ -533,6 +533,11 @@ nav{background:rgba(8,8,8,.72) !important;-webkit-backdrop-filter:blur(20px) sat
 .studio-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:start}
 .founders{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border)}
 .founder{background:var(--black);padding:1.6rem}
+.founder-top{display:flex;align-items:center;gap:1.1rem;margin-bottom:1rem}
+.founder-top .founder-r{margin:.45rem 0 0}
+.founder-img{width:72px;height:72px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1px solid rgba(180,147,90,.55);background:#111}
+.founder-img img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(.15)}
+@media(max-width:600px){.founder-img{width:60px;height:60px}}
 .founder-n{font-family:var(--display);font-size:1.5rem;letter-spacing:.03em;text-transform:uppercase;color:var(--white);line-height:1}
 .founder-r{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,245,242,.55);margin:.55rem 0 .9rem}
 .founder p{font-size:.7rem;line-height:1.8;color:rgba(245,245,242,.78)}
@@ -675,8 +680,8 @@ section:not(.work-section) > .platforms{margin-left:0 !important;margin-right:0 
     </div>
     <div class="fi">
       <div class="founders">
-        <div class="founder"><div class="founder-n">Matthew Lynas</div><div class="founder-r">Founder and Solutions Lead</div><p>Leads strategy, client relationships and brand and web delivery. Data analyst and Associate Member of the Institute of Analytics, with experience across energy and sport. Trainee PGA Professional and founder of Vintxge Golf.</p></div>
-        <div class="founder"><div class="founder-n">Craig Leith</div><div class="founder-r">Co-Founder and Solutions Lead</div><p>First Class Computer Science graduate and Microsoft Power Platform specialist, delivering Power Apps, Power Automate and Power BI solutions daily in the energy technology sector. Leads automation and digital delivery. Co-founder of Vintxge Golf.</p></div>
+        <div class="founder"><div class="founder-top"><div class="founder-img"><img src="founder-matthew.jpg" alt="Matthew Lynas" loading="lazy" style="object-position:center 10%"></div><div><div class="founder-n">Matthew Lynas</div><div class="founder-r">Founder and Solutions Lead</div></div></div><p>Leads strategy, client relationships and brand and web delivery. Data analyst and Associate Member of the Institute of Analytics, with experience across energy and sport. Trainee PGA Professional and founder of Vintxge Golf.</p></div>
+        <div class="founder"><div class="founder-top"><div class="founder-img"><img src="founder-craig.jpg" alt="Craig Leith" loading="lazy" style="object-position:center 30%"></div><div><div class="founder-n">Craig Leith</div><div class="founder-r">Co-Founder and Solutions Lead</div></div></div><p>First Class Computer Science graduate and Microsoft Power Platform specialist, delivering Power Apps, Power Automate and Power BI solutions daily in the energy technology sector. Leads automation and digital delivery. Co-founder of Vintxge Golf.</p></div>
       </div>
       <div class="acqua-tie">For larger programmes, dot.x works alongside Acqua's senior IT programme and project management. <a href="https://acquautilitiesmedia.com" target="_blank" rel="noopener noreferrer">Visit Acqua ↗</a></div>
     </div>
