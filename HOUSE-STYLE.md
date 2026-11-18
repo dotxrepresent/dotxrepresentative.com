@@ -34,3 +34,4 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Services ticker on the home page: seven services only, evenly spaced with gold dot separators, slow loop, pauses on hover, off for reduced motion.
 - Case study videos load only when scrolled into view. Keep images under 500KB.
 - Founder cards carry round photos (72px, gold hairline), same photos as the Acqua team section.
+- Matthew and Craig are both co-founders of Vintxge Golf. Matthew is founder of dot.x, Craig co-founder.
