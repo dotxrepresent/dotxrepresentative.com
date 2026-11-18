@@ -41,3 +41,4 @@ Updated November 2026. Keep this in sync with every change to the site.
 - dot.x nav links to Acqua; Acqua nav links to DotX Representative.
 - Copy: never more than one "and" in a sentence. Split the sentence or use a comma list.
 - Every site we build carries the small "Built by DotX Representative" tag with the .x circle in the footer's bottom row, including dot.x and Acqua.
+- Opening line of the home page, About and every bio or description starts "DotX Representative is the digital studio of Acqua Utilities Media".
