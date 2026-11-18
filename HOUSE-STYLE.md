@@ -30,3 +30,6 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Mirror every change on phone. Testimonials and recent work swipe sideways; process steps sit two to a row; area cards hide their bullet lists.
 - Founders are not named in hero copy, descriptions or bios. Names appear only on their own founder or team cards.
 - Matthew is described as a trainee PGA Professional on dot.x only (founder bio, Sport page). Not on Acqua.
+- Write "Sport & Golf" (ampersand) in menus, headings, labels and titles. Lowercase "sport and golf" in sentences.
+- Services ticker on the home page: seven services only, evenly spaced with gold dot separators, slow loop, pauses on hover, off for reduced motion.
+- Case study videos load only when scrolled into view. Keep images under 500KB.
