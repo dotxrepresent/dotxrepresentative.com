@@ -505,6 +505,19 @@ footer.ft{display:block;padding:3.5rem 2rem 1.75rem;border-top:1px solid var(--b
 @media(max-width:900px){.ft-top{grid-template-columns:1fr;gap:2.25rem}}
 @media(max-width:600px){footer.ft{padding:2.5rem 1.25rem 1.5rem}.ft-cols{grid-template-columns:1fr 1fr;gap:1.75rem 1rem}.ft-cols>div:last-child{grid-column:1/-1}.ft-cols>div:last-child a{display:inline-block;margin-right:1.4rem}.ft-bot{flex-direction:column;gap:.4rem}}
 .built-by{display:inline-flex;align-items:center;gap:.5rem;color:rgba(245,245,242,.45);text-decoration:none;transition:color .2s}.built-by:hover{color:var(--white)}.built-by img{width:16px;height:16px;border-radius:50%;display:block}
+
+/* Simplify (Nov 2026) */
+.about-mini{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.am-copy .about-body{max-width:34rem}
+.am-people{display:flex;flex-direction:column;gap:.75rem}
+.am-p{display:flex;align-items:center;gap:1rem;border:1px solid var(--border);padding:.9rem 1.1rem;text-decoration:none;color:inherit;transition:border-color .2s}
+.am-p:hover{border-color:rgba(180,147,90,.6)}
+.am-p .founder-img{width:56px;height:56px}
+.am-n,.am-r{display:block}
+.am-n{font-family:var(--display);font-size:1.35rem;letter-spacing:.02em;text-transform:uppercase;line-height:1}
+.am-r{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold,#b4935a);margin-top:.35rem}
+.am-link{display:inline-block;margin-top:1.4rem;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold,#b4935a);text-decoration:none;border-bottom:1px solid rgba(180,147,90,.4);padding-bottom:.2rem}
+@media(max-width:800px){.about-mini{grid-template-columns:1fr;gap:1.5rem}}
 </style>
 <style>
 /* ===== SHARED KIT: reCAPTCHA and cookie notice ===== */
@@ -659,7 +672,7 @@ section:not(.work-section) > .platforms{margin-left:0 !important;margin-right:0 
       <div class="nav-dd-menu"><a href="brand.html"><span class="dd-n">01</span><span class="dd-t">Brand<span>Identity, technical packs, content</span></span></a><a href="web.html"><span class="dd-n">02</span><span class="dd-t">Web<span>Design, build and care</span></span></a><a href="automation.html"><span class="dd-n">03</span><span class="dd-t">Automation<span>AI assistants and workflows</span></span></a><a href="sport.html"><span class="dd-n">04</span><span class="dd-t">Sport &amp; Golf<span>Advisory, launch strategy, clubs</span></span></a><a href="index.html#contact" class="dd-foot">Discovery session from £75 <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5L8.5 3.5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
     </li>
     <li><a href="work.html">Work</a></li>
-    <li><a href="index.html#about">About</a></li>
+    <li><a href="about.html">About</a></li>
     <li><a href="https://acquautilitiesmedia.com" target="_blank" rel="noopener noreferrer" class="nav-acqua">Acqua <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5L8.5 3.5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a></li>
     <li><a href="index.html#contact" class="nav-cta">Start a Project</a></li>
   </ul>
@@ -672,7 +685,7 @@ section:not(.work-section) > .platforms{margin-left:0 !important;margin-right:0 
     <div class="mn-lbl">Services</div>
     <a href="brand.html" class="mob-item mn-row"><span class="mn-n">01</span><span class="mn-t">Brand<small>Identity, technical packs, content</small></span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a><a href="web.html" class="mob-item mn-row"><span class="mn-n">02</span><span class="mn-t">Web<small>Design, build and care</small></span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a><a href="automation.html" class="mob-item mn-row"><span class="mn-n">03</span><span class="mn-t">Automation<small>AI assistants and workflows</small></span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a><a href="sport.html" class="mob-item mn-row"><span class="mn-n">04</span><span class="mn-t">Sport &amp; Golf<small>Advisory, launch strategy, clubs</small></span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
     <div class="mn-lbl">Studio</div>
-    <div class="mn-links"><a href="work.html" class="mob-item">Work</a><a href="index.html#about" class="mob-item">About</a><a href="index.html#contact" class="mob-item">Contact</a></div>
+    <div class="mn-links"><a href="work.html" class="mob-item">Work</a><a href="about.html" class="mob-item">About</a><a href="index.html#contact" class="mob-item">Contact</a></div>
     <a href="https://acquautilitiesmedia.com" target="_blank" rel="noopener noreferrer" class="mob-item mn-studio"><span>Part of</span>Acqua Utilities Media <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5L8.5 3.5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
   </div>
   <div class="mn-foot"><a href="index.html#contact" class="mob-item mn-cta">Start a project</a></div>
@@ -710,24 +723,15 @@ section:not(.work-section) > .platforms{margin-left:0 !important;margin-right:0 
 <!-- ABOUT -->
 <section id="about">
   <div class="s-label fi">About</div>
-  <div class="studio-grid">
-    <div class="fi">
-      <h2 class="s-h2">Two founders.<br>One studio.<br><em>Backed by Acqua.</em></h2>
+  <div class="about-mini">
+    <div class="am-copy fi">
+      <h2 class="s-h2">One studio.<br><em>Backed by Acqua.</em></h2>
       <p class="about-body">DotX Representative is the digital studio of Acqua Utilities Media Limited, delivering all of Acqua's web and automation work.</p>
-      <p class="about-body">We pair enterprise technology experience with having built a brand of our own. The work is commercially grounded, technically sound and delivered by the people you speak to.</p>
-      <div class="about-proof">
-        <div class="proof-item"><div class="proof-num">2024</div><div class="proof-lbl">dot.x founded</div></div>
-        <div class="proof-item"><div class="proof-num">2022</div><div class="proof-lbl">Vintxge Golf founded</div></div>
-        <div class="proof-item"><div class="proof-num">10+</div><div class="proof-lbl">Countries shipped</div></div>
-        <div class="proof-item"><div class="proof-num">M365</div><div class="proof-lbl">Power Platform daily</div></div>
-      </div>
+      <a href="about.html" class="am-link">About the studio →</a>
     </div>
-    <div class="fi">
-      <div class="founders">
-        <div class="founder"><div class="founder-top"><div class="founder-img"><img src="founder-matthew.jpg" alt="Matthew Lynas" loading="lazy" style="object-position:center 10%"></div><div><div class="founder-n">Matthew Lynas</div><div class="founder-r">Co-Founder and Solutions Lead</div></div></div><p>Leads strategy, client relationships and all brand work, including websites. Data analyst, Associate Member of the Institute of Analytics, with experience across energy and sport. Trainee PGA Professional and co-founder of Vintxge Golf.</p></div>
-        <div class="founder"><div class="founder-top"><div class="founder-img"><img src="founder-craig.jpg" alt="Craig Leith" loading="lazy" style="object-position:center 30%"></div><div><div class="founder-n">Craig Leith</div><div class="founder-r">Co-Founder and Solutions Lead</div></div></div><p>First Class Computer Science graduate. Microsoft Power Platform specialist, delivering Power Apps, Power Automate and Power BI daily in the energy technology sector. Leads automation and digital delivery. Co-founder of Vintxge Golf.</p></div>
-      </div>
-      <div class="acqua-tie">For larger programmes, dot.x works alongside Acqua's senior IT programme and project management. <a href="https://acquautilitiesmedia.com" target="_blank" rel="noopener noreferrer">Visit Acqua ↗</a></div>
+    <div class="am-people fi">
+      <a href="about.html" class="am-p"><span class="founder-img"><img src="founder-matthew.jpg" alt="Matthew Lynas" loading="lazy"></span><span><span class="am-n">Matthew Lynas</span><span class="am-r">Co-Founder and Solutions Lead</span></span></a>
+      <a href="about.html" class="am-p"><span class="founder-img"><img src="founder-craig.jpg" alt="Craig Leith" loading="lazy"></span><span><span class="am-n">Craig Leith</span><span class="am-r">Co-Founder and Solutions Lead</span></span></a>
     </div>
   </div>
 </section>
@@ -775,10 +779,6 @@ section:not(.work-section) > .platforms{margin-left:0 !important;margin-right:0 
         <a href="https://www.linkedin.com/company/dot-xrepresentative/" target="_blank" rel="noopener noreferrer">@dot.xrepresentative ↗</a>
         <span class="lbl">Instagram</span>
         <a href="https://www.instagram.com/dot.xrepresentative" target="_blank" rel="noopener noreferrer">@dot.xrepresentative ↗</a>
-        <span class="lbl">Based in</span>
-        <span>United Kingdom</span>
-        <span class="lbl">Response</span>
-        <span>Same day, Monday to Friday</span>
       </div>
     </div>
     <div class="fi">
@@ -822,7 +822,7 @@ section:not(.work-section) > .platforms{margin-left:0 !important;margin-right:0 
     <div class="ft-brand"><a href="index.html" class="ft-logo"><img src="dotx-logo-circle.png" alt="dot.x"></a><p>The brand, web and automation studio of Acqua Utilities Media Limited.</p></div>
     <div class="ft-cols">
       <div><h4>Services</h4><a href="brand.html">Brand</a><a href="web.html">Web</a><a href="automation.html">Automation</a><a href="sport.html">Sport &amp; Golf</a></div>
-      <div><h4>Studio</h4><a href="work.html">Work</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><a href="#" id="privLink">Privacy</a></div>
+      <div><h4>Studio</h4><a href="work.html">Work</a><a href="about.html">About</a><a href="index.html#contact">Contact</a><a href="#" id="privLink">Privacy</a></div>
       <div><h4>Connect</h4><a href="https://www.linkedin.com/company/dot-xrepresentative/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5L8.5 3.5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a><a href="https://www.instagram.com/dot.xrepresentative" target="_blank" rel="noopener noreferrer">Instagram <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5L8.5 3.5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a><a href="https://acquautilitiesmedia.com" target="_blank" rel="noopener noreferrer">Acqua <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5L8.5 3.5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
     </div>
   </div>

@@ -21,7 +21,7 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Background #080808, text #f5f5f2, borders var(--border), gold only as hairline trim.
 
 ## Structure
-- Pages: index (services overview, about, recent work, testimonials, contact), brand, web, automation, sport, work.
+- Pages: index (services overview, short about with founder rows, recent work, testimonials, contact), about (studio story, proof numbers, founder cards), brand, web, automation, sport, work.
 - Menu: Services dropdown (Brand, Web, Automation, Sport and Golf), Work, About, Start a Project. Same on every page.
 - Service pages: page hero, service cards (two columns for 2 or 4 cards, three for 3), one supporting section, "Your project. Next." band.
 - All pages are generated from one template so the nav, footer, styles and scripts stay identical.
@@ -42,3 +42,6 @@ Updated November 2026. Keep this in sync with every change to the site.
 - Copy: never more than one "and" in a sentence. Split the sentence or use a comma list.
 - Every site we build carries the small "Built by DotX Representative" tag with the .x circle in the footer's bottom row, including dot.x and Acqua.
 - Opening line of the home page, About and every bio or description starts "DotX Representative is the digital studio of Acqua Utilities Media".
+- About lives on its own page on both sites. Home pages keep a short About with small photo rows linking to it.
+- Acqua home: hero, three core areas with an "Also available" line, team strip, testimonials, contact. No duplicate service grids.
+- Team photos are cropped square with the face centred by detection, on a light ground. Acqua uses team-brian.jpg, team-matthew.jpg, team-craig.jpg; dot.x uses founder-matthew.jpg, founder-craig.jpg. No object-position hacks.
