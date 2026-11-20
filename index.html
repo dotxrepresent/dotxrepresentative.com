@@ -521,13 +521,15 @@ footer.ft{display:block;padding:3.5rem 2rem 1.75rem;border-top:1px solid var(--b
 </style>
 <style>
 /* ===== SHARED KIT: reCAPTCHA and cookie notice ===== */
-.rc-wrap{padding:1rem 1.25rem .9rem;display:flex;flex-direction:column;gap:.55rem}
-.rc-widget{min-height:78px}
-.rc-msg{display:none;font-size:.78rem;line-height:1.5;color:#c0392b}
+.rc-wrap{background:var(--black);padding:1rem 1.25rem;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.6rem 1.5rem}
+.rc-widget{width:302px;height:76px;min-height:0;overflow:hidden;border-radius:2px;line-height:0;background:#222}
+.rc-widget>div{margin:-1px}
+.rc-msg{display:none;grid-column:1/-1;font-size:.72rem;line-height:1.5;color:#e07a6e;margin:0}
 .rc-msg.show{display:block}
-.rc-note{font-size:.68rem;line-height:1.6;opacity:.75;margin:0}
-.rc-note a{text-decoration:underline}
-@media(max-width:360px){.rc-widget{transform:scale(.88);transform-origin:0 0;min-height:70px}}
+.rc-note{font-size:.6rem;letter-spacing:.04em;line-height:1.7;color:rgba(245,245,242,.5);margin:0;max-width:22rem}
+.rc-note a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:700px){.rc-wrap{grid-template-columns:1fr}}
+@media(max-width:360px){.rc-widget{transform:scale(.88);transform-origin:0 0;height:67px;width:266px}}
 .kit-hp{position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden}
 .ck-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:100000;max-width:620px;margin:0 auto;background:#141414;color:#f5f5f2;font-family:'DM Mono',monospace;
   display:flex;align-items:center;gap:1rem;padding:.95rem 1.1rem;box-shadow:0 12px 32px rgba(0,0,0,.25);border-radius:4px;transform:translateY(140%);transition:transform .45s cubic-bezier(.16,1,.3,1)}
@@ -537,7 +539,8 @@ footer.ft{display:block;padding:3.5rem 2rem 1.75rem;border-top:1px solid var(--b
 .ck-bar button{flex-shrink:0;background:#f5f5f2;color:#080808;border:0;padding:.6rem 1.3rem;font-family:'DM Mono',monospace;font-size:.78rem;font-weight:500;letter-spacing:.04em;cursor:pointer;border-radius:2px}
 @media(max-width:560px){.ck-bar{flex-direction:column;align-items:stretch;text-align:left}.ck-bar button{width:100%}}
 @media(prefers-reduced-motion:reduce){.ck-bar{transition:none}}
-.c-form .rc-wrap{border-bottom:1px solid var(--border);color:rgba(245,245,242,.6)}
+.c-form .rc-wrap{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+@media(max-width:600px){.f-submit{flex-direction:column;align-items:stretch;gap:.9rem}.f-submit button{justify-content:center}.f-note{text-align:center}}
 .c-form .rc-wrap a{color:inherit}
 </style>
 <style>
