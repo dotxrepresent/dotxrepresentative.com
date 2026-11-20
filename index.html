@@ -522,8 +522,8 @@ footer.ft{display:block;padding:3.5rem 2rem 1.75rem;border-top:1px solid var(--b
 <style>
 /* ===== SHARED KIT: reCAPTCHA and cookie notice ===== */
 .rc-wrap{background:var(--black);padding:1rem 1.25rem;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.6rem 1.5rem}
-.rc-widget{width:300px;height:74px;min-height:0;overflow:hidden;border-radius:2px;line-height:0;background:#222}
-.rc-widget>div{margin:-2px}
+.rc-widget{width:298px;height:72px;min-height:0;overflow:hidden;border-radius:3px;line-height:0;background:#222;isolation:isolate;-webkit-mask-image:-webkit-radial-gradient(white,black)}
+.rc-widget>div{margin:-3px}
 .rc-msg{display:none;grid-column:1/-1;font-size:.72rem;line-height:1.5;color:#e07a6e;margin:0}
 .rc-msg.show{display:block}
 .rc-note{font-size:.6rem;letter-spacing:.04em;line-height:1.7;color:rgba(245,245,242,.5);margin:0;max-width:22rem}
