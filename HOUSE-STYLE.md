@@ -45,3 +45,4 @@ Updated November 2026. Keep this in sync with every change to the site.
 - About lives on its own page on both sites. Home pages keep a short About with small photo rows linking to it.
 - Acqua home: hero, three core areas with an "Also available" line, team strip, testimonials, contact. No duplicate service grids.
 - Team photos are cropped square with the face centred by detection, on a light ground. Acqua uses team-brian.jpg, team-matthew.jpg, team-craig.jpg; dot.x uses founder-matthew.jpg, founder-craig.jpg. No object-position hacks.
+- reCAPTCHA row: solid black like the fields, hairline above and below. Widget clipped to 298x72 (trim 3px each side) with a 3px rounded frame and a mask so iOS clips the corners. Privacy note beside it on desktop, below on phone. Send button full width on phone.
